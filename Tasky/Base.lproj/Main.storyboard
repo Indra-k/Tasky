@@ -38,7 +38,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="MIQ-vY-Yzu" kind="presentation" modalPresentationStyle="fullScreen" id="3vO-L0-rAS"/>
+                                    <action selector="buttonDone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRK-OW-LzQ"/>
+                                    <segue destination="MIQ-vY-Yzu" kind="show" identifier="usernameSaved" id="zl0-5c-hlk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,6 +56,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="username" destination="iDB-1C-tOs" id="ral-Ll-o07"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +67,7 @@
         <!--Select Role Controller-->
         <scene sceneID="Kuh-3w-9RD">
             <objects>
-                <viewController storyboardIdentifier="SelectRoleController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MIQ-vY-Yzu" customClass="SelectRoleController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectRoleController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MIQ-vY-Yzu" customClass="SelectRoleController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HJz-gG-c4v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,6 +194,9 @@
                         <viewLayoutGuide key="safeArea" id="7gD-BN-Sec"/>
                     </view>
                     <navigationItem key="navigationItem" id="u1h-lZ-RA3"/>
+                    <connections>
+                        <outlet property="UserName" destination="iNX-yx-M7l" id="a5j-MR-Ug1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjJ-SZ-zq2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

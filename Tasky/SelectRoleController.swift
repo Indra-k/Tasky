@@ -11,7 +11,14 @@ import UIKit
 
 class SelectRoleController: UIViewController {
     
+    @IBOutlet weak var UserName: UILabel!
+    
+    var username = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.UserName?.text = "Welcome \(username)"
     }
+    
 }

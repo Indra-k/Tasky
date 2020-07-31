@@ -17,7 +17,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     let workTime = ["5" ,"10" ,"15" ,"20" ,"25" ,"30" ,"35" ,"40" ,"55" ,"60"]
     let shortBreak = ["1" ,"2" ,"3" ,"4" ,"5" ,"6" ,"7" ,"8" ,"9" ,"10" ,"15" ,"20" ,"25" ,"30"]
     let longBreak = ["5" ,"10" ,"15" ,"20" ,"25" ,"30" ,"35" ,"40" ,"55" ,"60"]
-    let lBreakAfter = ["2 Interval", "3 Interval", "4 Interval", "5 Interval", "6 Interval", "7 Interval", "8 Interval"]
+    let longBreakAfter = ["2 Interval", "3 Interval", "4 Interval", "5 Interval", "6 Interval", "7 Interval", "8 Interval"]
     
     override func viewDidLoad() {
         

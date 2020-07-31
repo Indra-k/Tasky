@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QxE-sS-p87">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -403,9 +403,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ouT-Hc-cIi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7L-Sm-lrd">
                                 <rect key="frame" x="167" y="742" width="80" height="80"/>
                                 <constraints>
@@ -434,7 +431,7 @@
                                 <state key="normal" backgroundImage="Calendar Button"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lk0-Wt-Pub">
-                                <rect key="frame" x="80" y="244" width="254" height="250"/>
+                                <rect key="frame" x="80" y="244" width="254" height="208"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-vk-Sin">
                                         <rect key="frame" x="0.0" y="0.0" width="254" height="40"/>
@@ -445,63 +442,36 @@
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="1"/>
                                         <connections>
-                                            <action selector="selectWorkIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="pNt-dW-LpL"/>
+                                            <action selector="workIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="4N2-M5-cFN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-FN-yKU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-FN-yKU" userLabel="Work Time Btn">
                                         <rect key="frame" x="0.0" y="42" width="254" height="40"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="vUQ-3i-cLn"/>
                                         </constraints>
-                                        <state key="normal" title="2"/>
-                                        <connections>
-                                            <action selector="workIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="IEf-k1-d27"/>
-                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPn-Es-4yZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPn-Es-4yZ" userLabel="Short Break Btn">
                                         <rect key="frame" x="0.0" y="84" width="254" height="40"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="upE-0n-p57"/>
                                         </constraints>
-                                        <state key="normal" title="3"/>
-                                        <connections>
-                                            <action selector="workIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="GWW-q5-EuY"/>
-                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdA-qF-51A">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdA-qF-51A" userLabel="Long Break Btn">
                                         <rect key="frame" x="0.0" y="126" width="254" height="40"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="9BA-Vv-tlv"/>
                                         </constraints>
-                                        <state key="normal" title="4"/>
-                                        <connections>
-                                            <action selector="workIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="96V-Du-0QS"/>
-                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwC-yv-L1I">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwC-yv-L1I" userLabel="Long Break After Btn">
                                         <rect key="frame" x="0.0" y="168" width="254" height="40"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="bpS-kg-pnX"/>
                                         </constraints>
-                                        <state key="normal" title="5"/>
-                                        <connections>
-                                            <action selector="workIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="O8w-c2-731"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSU-gQ-QqA">
-                                        <rect key="frame" x="0.0" y="210" width="254" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="LOH-B2-Dkq"/>
-                                        </constraints>
-                                        <state key="normal" title="6"/>
-                                        <connections>
-                                            <action selector="workIntervalPressed:" destination="QxE-sS-p87" eventType="touchUpInside" id="xeU-SA-uuS"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -514,39 +484,41 @@
                                     <constraint firstItem="CwC-yv-L1I" firstAttribute="leading" secondItem="lk0-Wt-Pub" secondAttribute="leading" id="WPr-bO-e1Y"/>
                                     <constraint firstItem="FdA-qF-51A" firstAttribute="leading" secondItem="lk0-Wt-Pub" secondAttribute="leading" id="Wfo-4x-quE"/>
                                     <constraint firstAttribute="trailing" secondItem="Hot-FN-yKU" secondAttribute="trailing" id="Yx5-Qp-Hfk"/>
-                                    <constraint firstItem="jSU-gQ-QqA" firstAttribute="leading" secondItem="lk0-Wt-Pub" secondAttribute="leading" id="jIm-Y6-0IQ"/>
                                     <constraint firstItem="Hot-FN-yKU" firstAttribute="leading" secondItem="lk0-Wt-Pub" secondAttribute="leading" id="oHo-ay-v9H"/>
-                                    <constraint firstAttribute="trailing" secondItem="jSU-gQ-QqA" secondAttribute="trailing" id="py8-ds-qx3"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2o-Jc-wll">
-                                <rect key="frame" x="47" y="552" width="347" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Abaikan Screen ini
-Masih coba coba</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fO-kZ-CZZ">
+                                <rect key="frame" x="47" y="264.5" width="320" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contoh work interval dengan picker view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-mF-hWL">
+                                <rect key="frame" x="53.5" y="144" width="307" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ouT-Hc-cIi" secondAttribute="bottom" id="3eA-vw-mi5"/>
                             <constraint firstItem="lk0-Wt-Pub" firstAttribute="top" secondItem="JH8-5a-tJD" secondAttribute="top" constant="200" id="5U6-ho-Dyn"/>
-                            <constraint firstAttribute="trailing" secondItem="ouT-Hc-cIi" secondAttribute="trailing" id="5l6-6t-XQk"/>
                             <constraint firstItem="Q7L-Sm-lrd" firstAttribute="leading" secondItem="uxD-5X-Vip" secondAttribute="trailing" constant="40" id="AR1-RF-XW3"/>
+                            <constraint firstItem="3fO-kZ-CZZ" firstAttribute="centerX" secondItem="6Du-eM-mqE" secondAttribute="centerX" id="ENF-V9-8hi"/>
                             <constraint firstItem="JH8-5a-tJD" firstAttribute="bottom" secondItem="EAy-40-Kri" secondAttribute="bottom" constant="40" id="FH0-Z8-DGZ"/>
                             <constraint firstItem="EAy-40-Kri" firstAttribute="leading" secondItem="Q7L-Sm-lrd" secondAttribute="trailing" constant="40" id="L2A-Te-t4H"/>
                             <constraint firstItem="lk0-Wt-Pub" firstAttribute="leading" secondItem="JH8-5a-tJD" secondAttribute="leading" constant="80" id="Ogp-4M-x0v"/>
                             <constraint firstItem="JH8-5a-tJD" firstAttribute="bottom" secondItem="uxD-5X-Vip" secondAttribute="bottom" constant="40" id="Q7s-DH-J41"/>
-                            <constraint firstItem="ouT-Hc-cIi" firstAttribute="top" secondItem="6Du-eM-mqE" secondAttribute="top" id="Rr7-4j-9aI"/>
                             <constraint firstItem="JH8-5a-tJD" firstAttribute="trailing" secondItem="lk0-Wt-Pub" secondAttribute="trailing" constant="80" id="ZKK-cz-Pgp"/>
-                            <constraint firstItem="ouT-Hc-cIi" firstAttribute="leading" secondItem="6Du-eM-mqE" secondAttribute="leading" id="mkX-zg-Sq9"/>
+                            <constraint firstItem="kco-mF-hWL" firstAttribute="centerX" secondItem="6Du-eM-mqE" secondAttribute="centerX" id="fPG-Jv-3QA"/>
+                            <constraint firstItem="kco-mF-hWL" firstAttribute="top" secondItem="JH8-5a-tJD" secondAttribute="top" constant="100" id="jZo-hx-qfR"/>
                             <constraint firstItem="Q7L-Sm-lrd" firstAttribute="centerX" secondItem="6Du-eM-mqE" secondAttribute="centerX" id="rlo-9o-hOW"/>
                             <constraint firstItem="JH8-5a-tJD" firstAttribute="bottom" secondItem="Q7L-Sm-lrd" secondAttribute="bottom" constant="40" id="t4p-1H-jRm"/>
+                            <constraint firstItem="3fO-kZ-CZZ" firstAttribute="top" secondItem="kco-mF-hWL" secondAttribute="bottom" constant="100" id="tpl-iI-seV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JH8-5a-tJD"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="3fO-kZ-CZZ" id="GTE-Fy-8ZA"/>
+                        <outlet property="workIntervalBtn" destination="4vW-vk-Sin" id="flc-a4-fx7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AnR-60-fL4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

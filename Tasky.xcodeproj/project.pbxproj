@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676724DB3C67006F837E /* CreateTaskController.swift */; };
+		9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676924DB3CDB006F837E /* StartTaskController.swift */; };
 		914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48624D243CD00FA8048 /* SelectRoleController.swift */; };
 		914FC48924D2444500FA8048 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48824D2444500FA8048 /* TaskController.swift */; };
 		A937B06E24D1237C009BC337 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A937B06D24D1237C009BC337 /* SettingController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9101676724DB3C67006F837E /* CreateTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskController.swift; sourceTree = "<group>"; };
+		9101676924DB3CDB006F837E /* StartTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTaskController.swift; sourceTree = "<group>"; };
 		914FC48624D243CD00FA8048 /* SelectRoleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleController.swift; sourceTree = "<group>"; };
 		914FC48824D2444500FA8048 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		A937B06D24D1237C009BC337 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
@@ -74,10 +78,12 @@
 				914FC48624D243CD00FA8048 /* SelectRoleController.swift */,
 				A997036E24CFCA8500F3215F /* InsertNameController.swift */,
 				A937B06F24D12DD1009BC337 /* StartViewController.swift */,
+				9101676724DB3C67006F837E /* CreateTaskController.swift */,
 				A997037624CFCA8700F3215F /* Assets.xcassets */,
 				A997037824CFCA8700F3215F /* LaunchScreen.storyboard */,
 				A997037B24CFCA8700F3215F /* Info.plist */,
 				A997037324CFCA8500F3215F /* Tasky.xcdatamodeld */,
+				9101676924DB3CDB006F837E /* StartTaskController.swift */,
 			);
 			path = Tasky;
 			sourceTree = "<group>";
@@ -154,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A937B06E24D1237C009BC337 /* SettingController.swift in Sources */,
+				9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */,
 				914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */,
 				A997036F24CFCA8500F3215F /* InsertNameController.swift in Sources */,
+				9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */,
 				A997036B24CFCA8500F3215F /* AppDelegate.swift in Sources */,
 				A997037524CFCA8500F3215F /* Tasky.xcdatamodeld in Sources */,
 				A997036D24CFCA8500F3215F /* SceneDelegate.swift in Sources */,

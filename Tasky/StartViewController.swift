@@ -28,8 +28,8 @@ class StartViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        workPicker.dataSource = self
-        workPicker.delegate = self
+//        workPicker.dataSource = self
+//        workPicker.delegate = self
 
     }
     

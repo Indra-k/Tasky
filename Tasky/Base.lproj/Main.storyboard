@@ -343,6 +343,9 @@
                                 <rect key="frame" x="266" y="144" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Task"/>
+                                <connections>
+                                    <segue destination="n29-Nd-OPd" kind="presentation" id="k6w-gq-ZOb"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2WJ-DH-c4O">
                                 <rect key="frame" x="20" y="308" width="374" height="281"/>
@@ -460,9 +463,9 @@
         <!--Insert Task View Controller-->
         <scene sceneID="1z8-ZI-mQm">
             <objects>
-                <viewController storyboardIdentifier="InsertTaskViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n29-Nd-OPd" customClass="InsertTaskViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsertTaskViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n29-Nd-OPd" customClass="InsertTaskViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4N5-KI-1xR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="insert box" translatesAutoresizingMaskIntoConstraints="NO" id="D4C-5q-gjd">

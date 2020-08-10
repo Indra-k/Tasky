@@ -8,29 +8,17 @@
 
 import UIKit
 
-class StartViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
+class StartViewController: UIViewController {
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return data.count
-    }
+    @IBOutlet weak var username: UILabel!
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return data[row]
-    }
-    
-    @IBOutlet var workPicker: UIPickerView!
-    
-    let data = ["0", "1", "2", "3", "4", "5"]
+    var usernameLabel = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        workPicker.dataSource = self
-//        workPicker.delegate = self
-
+        
+        // load nama user berdasarkan input name
+        self.username?.text = usernameLabel
     }
     
 }

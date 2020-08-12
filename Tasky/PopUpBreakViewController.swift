@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PopUpPauseResumeViewController: UIViewController {
+class PopUpBreakViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

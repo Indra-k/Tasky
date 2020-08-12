@@ -719,7 +719,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcq-bY-b2I">
                                         <rect key="frame" x="142" y="445" width="90" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -761,8 +761,8 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="Calendar Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-mF-hWL">
-                                <rect key="frame" x="172" y="144" width="70" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME SETTING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-mF-hWL">
+                                <rect key="frame" x="150.5" y="144" width="113" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -873,12 +873,12 @@
             </objects>
             <point key="canvasLocation" x="2482.608695652174" y="895.98214285714278"/>
         </scene>
-        <!--Pop Up Pause Resume View Controller-->
+        <!--Pop Up Break View Controller-->
         <scene sceneID="bKu-yT-CKS">
             <objects>
-                <viewController storyboardIdentifier="PopUpPauseResumeViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NYG-5w-4Hr" customClass="PopUpPauseResumeViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopUpBreakViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NYG-5w-4Hr" customClass="PopUpBreakViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rrm-Bi-Gdg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IPd-IL-eQO">
@@ -912,7 +912,6 @@
                                         </state>
                                         <connections>
                                             <action selector="closeReward:" destination="NYG-5w-4Hr" eventType="touchUpInside" id="ULe-ki-IMX"/>
-                                            <segue destination="fBt-Uo-4lr" kind="show" id="v2F-aH-HFO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -948,9 +947,6 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" backgroundImage="Pause Button"/>
-                                        <connections>
-                                            <segue destination="NYG-5w-4Hr" kind="presentation" id="Ldh-7Y-4Y9"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3p-nL-KIk">
                                         <rect key="frame" x="287" y="293" width="80" height="80"/>
@@ -1034,9 +1030,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f67-sj-lph"/>
-        <segue reference="bRl-nd-AZN"/>
-        <segue reference="LAj-qP-NVa"/>
+        <segue reference="vJW-j5-Khy"/>
         <segue reference="pBY-XU-8sf"/>
     </inferredMetricsTieBreakers>
     <resources>

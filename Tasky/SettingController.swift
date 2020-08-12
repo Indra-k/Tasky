@@ -16,6 +16,8 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     @IBOutlet weak var shortBreakBtn: UIButton!
     @IBOutlet weak var longBreakBtn: UIButton!
     @IBOutlet weak var longBreakAfterBtn: UIButton!
+    @IBOutlet weak var buttonClose: UIButton!
+    @IBOutlet weak var buttonStartTask: UIButton!
     
     var selectedButton = UIButton()
     var selectedList : [String] = []
@@ -32,7 +34,13 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         pickerView.delegate = self
         pickerView.dataSource = self
         
-        // Do any additional setup after loading the view.
+        // corner radius untuk button 'done'
+        buttonStartTask.layer.cornerRadius = 10
+        // shadow untuk button 'done'
+        buttonStartTask.layer.shadowColor = UIColor.black.cgColor
+        buttonStartTask.layer.shadowOffset = CGSize(width: 0, height: 0)
+        buttonStartTask.layer.shadowOpacity = 0.3
+        buttonStartTask.layer.shadowRadius = 4.0
     }
     
     //MARK: - Work Interval
@@ -112,6 +120,10 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         pickerView.isHidden = true
     }
     
+    @IBAction func startTimerButton(_ sender: Any) {
+        
+        dismiss(animated: true)
+    }
 }
 
 

@@ -17,5 +17,9 @@ class PopUpPauseResumeViewController: UIViewController {
     }
     
 
-
+    @IBAction func closeReward(_ sender: Any) {
+        
+        dismiss(animated: true)
+    }
+    
 }

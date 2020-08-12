@@ -372,9 +372,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-Ga-Ych">
-                                <rect key="frame" x="20" y="44" width="47" height="30"/>
+                                <rect key="frame" x="29" y="43" width="30" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Main"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="vgK-wU-aUM" kind="show" id="Y9t-kH-xg0"/>
                                 </connections>
@@ -387,16 +390,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5b-vX-IkM">
-                                <rect key="frame" x="71" y="144" width="81" height="30"/>
+                                <rect key="frame" x="71" y="144" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Create Task"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqT-d1-feQ">
-                                <rect key="frame" x="266" y="144" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get Task"/>
                                 <connections>
-                                    <segue destination="n29-Nd-OPd" kind="presentation" id="k6w-gq-ZOb"/>
+                                    <action selector="createTask:" destination="F7T-CU-usC" eventType="touchUpInside" id="U2g-Mb-vlO"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2WJ-DH-c4O">
@@ -410,15 +409,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqT-d1-feQ">
+                                <rect key="frame" x="257" y="144" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Get Task"/>
+                                <connections>
+                                    <action selector="getTask:" destination="F7T-CU-usC" eventType="touchUpInside" id="tyU-9H-93m"/>
+                                    <segue destination="n29-Nd-OPd" kind="presentation" id="k6w-gq-ZOb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99889868500000001" green="0.76375335450000004" blue="0.57642257210000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="TdC-xV-2cQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="DBK-U8-nWT"/>
+                    <connections>
+                        <outlet property="buttonCreateTask" destination="U5b-vX-IkM" id="TF7-53-UaT"/>
+                        <outlet property="buttonGetTask" destination="VqT-d1-feQ" id="ZjF-fK-jGw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="on1-2W-KgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2483" y="-588"/>
+            <point key="canvasLocation" x="2482.608695652174" y="-588.61607142857144"/>
         </scene>
         <!--Create Task Controller-->
         <scene sceneID="Ryd-ox-Yc8">
@@ -429,9 +442,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3B-dI-kOY">
-                                <rect key="frame" x="21" y="44" width="45" height="30"/>
+                                <rect key="frame" x="37" y="44" width="30" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Task"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="F7T-CU-usC" kind="show" id="UIH-S6-Ogy"/>
                                 </connections>
@@ -496,10 +512,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLZ-jl-tZ5">
-                                <rect key="frame" x="167" y="792" width="81" height="30"/>
+                                <rect key="frame" x="150" y="793" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Create Task"/>
                                 <connections>
+                                    <action selector="createTask:" destination="QIJ-RR-cE5" eventType="touchUpInside" id="by0-8m-IRE"/>
                                     <segue destination="F7T-CU-usC" kind="show" id="LId-Ti-XDs"/>
                                 </connections>
                             </button>
@@ -507,10 +525,13 @@
                         <color key="backgroundColor" red="0.99889868500000001" green="0.76375335450000004" blue="0.57642257210000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Hco-pD-9Bh"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonCreate" destination="eLZ-jl-tZ5" id="wve-5v-SWs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgg-QX-HEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3214" y="-589"/>
+            <point key="canvasLocation" x="3213.04347826087" y="-589.28571428571422"/>
         </scene>
         <!--Insert Task View Controller-->
         <scene sceneID="1z8-ZI-mQm">
@@ -538,16 +559,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08h-ZO-Bgc">
-                                <rect key="frame" x="255" y="429" width="48" height="30"/>
+                                <rect key="frame" x="233" y="429" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
+                                    <action selector="cancelButton:" destination="n29-Nd-OPd" eventType="touchUpInside" id="SGC-59-Mwc"/>
                                     <segue destination="F7T-CU-usC" kind="show" id="eIj-fO-Lqv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCS-a2-f5r">
-                                <rect key="frame" x="100" y="429" width="75" height="30"/>
+                                <rect key="frame" x="86" y="429" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Insert Task"/>
                                 <connections>
                                     <action selector="insertIdButton:" destination="n29-Nd-OPd" eventType="touchUpInside" id="WMm-eV-eIW"/>
@@ -586,9 +610,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqT-bZ-oO6">
-                                        <rect key="frame" x="324" y="8" width="39" height="30"/>
+                                        <rect key="frame" x="331" y="8" width="35" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Close"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <segue destination="vgK-wU-aUM" kind="show" id="pBY-XU-8sf"/>
                                         </connections>
@@ -680,10 +707,14 @@
                                         <color key="backgroundColor" red="0.35209787436548223" green="0.35209787436548223" blue="0.35209787436548223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcq-bY-b2I">
-                                        <rect key="frame" x="170" y="449" width="34" height="30"/>
+                                        <rect key="frame" x="143" y="453" width="89" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Start"/>
+                                        <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
+                                            <action selector="startTimerButton:" destination="QxE-sS-p87" eventType="touchUpInside" id="kR1-U1-fSs"/>
                                             <segue destination="fBt-Uo-4lr" kind="show" id="bRl-nd-AZN"/>
                                         </connections>
                                     </button>
@@ -745,6 +776,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="u8g-WG-3lV"/>
                     <connections>
+                        <outlet property="buttonClose" destination="aqT-bZ-oO6" id="Hfn-lP-xjI"/>
+                        <outlet property="buttonStartTask" destination="Mcq-bY-b2I" id="3o6-gZ-9pN"/>
                         <outlet property="longBreakAfterBtn" destination="CwC-yv-L1I" id="44H-0g-TuI"/>
                         <outlet property="longBreakBtn" destination="FdA-qF-51A" id="u1h-VZ-X2K"/>
                         <outlet property="pickerView" destination="3fO-kZ-CZZ" id="GTE-Fy-8ZA"/>
@@ -757,10 +790,10 @@
             </objects>
             <point key="canvasLocation" x="2482.608695652174" y="133.92857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Calender Report View Controller-->
         <scene sceneID="yGV-Mn-kvH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="9Vs-1G-8zA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalenderReportViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Vs-1G-8zA" customClass="CalenderReportViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E0x-Mr-tWp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -800,9 +833,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twp-NI-b8O">
-                                        <rect key="frame" x="192" y="527" width="30" height="30"/>
+                                        <rect key="frame" x="166" y="526" width="83" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="OK"/>
+                                        <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fBt-Uo-4lr" kind="show" id="Fjt-eL-h5E"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.28644511421319796" green="0.28644511421319796" blue="0.28644511421319796" alpha="0.6427921660958904" colorSpace="custom" customColorSpace="displayP3"/>
@@ -817,6 +856,9 @@
                         <viewLayoutGuide key="safeArea" id="b8T-ii-2aC"/>
                     </view>
                     <navigationItem key="navigationItem" id="MwK-Zg-0pZ"/>
+                    <connections>
+                        <outlet property="buttonOK" destination="twp-NI-b8O" id="Dgd-OE-hXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJA-CW-3dZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -853,10 +895,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-Sl-4uc">
-                                        <rect key="frame" x="169" y="301" width="37" height="30"/>
+                                        <rect key="frame" x="142" y="301" width="91" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="close"/>
+                                        <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="close">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
+                                            <action selector="closeReward:" destination="NYG-5w-4Hr" eventType="touchUpInside" id="qDx-Jy-sBN"/>
                                             <segue destination="fBt-Uo-4lr" kind="show" id="v2F-aH-HFO"/>
                                         </connections>
                                     </button>
@@ -870,7 +916,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8N-aE-DEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3954" y="134"/>
+            <point key="canvasLocation" x="3953.6231884057975" y="133.92857142857142"/>
         </scene>
         <!--Start Task Controller-->
         <scene sceneID="uiV-v3-01E">
@@ -982,9 +1028,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bRl-nd-AZN"/>
-        <segue reference="Oyf-X1-Yha"/>
-        <segue reference="eHn-n2-AiF"/>
+        <segue reference="v2F-aH-HFO"/>
+        <segue reference="4xk-bv-HP0"/>
+        <segue reference="vJW-j5-Khy"/>
         <segue reference="pBY-XU-8sf"/>
     </inferredMetricsTieBreakers>
     <resources>

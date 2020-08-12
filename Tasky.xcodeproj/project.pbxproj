@@ -10,6 +10,7 @@
 		9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676724DB3C67006F837E /* CreateTaskController.swift */; };
 		9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676924DB3CDB006F837E /* StartTaskController.swift */; };
 		9121A41724E05786004555C1 /* PopUpPauseResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121A41624E05786004555C1 /* PopUpPauseResumeViewController.swift */; };
+		9139F99C24E381920047CB85 /* CalenderReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139F99B24E381920047CB85 /* CalenderReportViewController.swift */; };
 		914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48624D243CD00FA8048 /* SelectRoleController.swift */; };
 		914FC48924D2444500FA8048 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48824D2444500FA8048 /* TaskController.swift */; };
 		91F340B024DCF38D00B5F5B6 /* InsertTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */; };
@@ -28,6 +29,7 @@
 		9101676724DB3C67006F837E /* CreateTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskController.swift; sourceTree = "<group>"; };
 		9101676924DB3CDB006F837E /* StartTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTaskController.swift; sourceTree = "<group>"; };
 		9121A41624E05786004555C1 /* PopUpPauseResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPauseResumeViewController.swift; sourceTree = "<group>"; };
+		9139F99B24E381920047CB85 /* CalenderReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderReportViewController.swift; sourceTree = "<group>"; };
 		914FC48624D243CD00FA8048 /* SelectRoleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleController.swift; sourceTree = "<group>"; };
 		914FC48824D2444500FA8048 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTaskViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				A997037324CFCA8500F3215F /* Tasky.xcdatamodeld */,
 				91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */,
 				9121A41624E05786004555C1 /* PopUpPauseResumeViewController.swift */,
+				9139F99B24E381920047CB85 /* CalenderReportViewController.swift */,
 			);
 			path = Tasky;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				A937B06E24D1237C009BC337 /* SettingController.swift in Sources */,
 				9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */,
+				9139F99C24E381920047CB85 /* CalenderReportViewController.swift in Sources */,
 				914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */,
 				A997036F24CFCA8500F3215F /* InsertNameController.swift in Sources */,
 				9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */,

@@ -27,6 +27,5 @@ class CreateTaskController: UIViewController {
     }
     @IBAction func createTask(_ sender: Any) {
         
-        dismiss(animated: true)
     }
 }

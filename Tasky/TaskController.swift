@@ -36,10 +36,8 @@ class TaskController: UIViewController {
     }
     @IBAction func createTask(_ sender: Any) {
         
-        dismiss(animated: true)
     }
     @IBAction func getTask(_ sender: Any) {
         
-        dismiss(animated: true)
     }
 }

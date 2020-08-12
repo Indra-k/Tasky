@@ -16,7 +16,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     @IBOutlet weak var shortBreakBtn: UIButton!
     @IBOutlet weak var longBreakBtn: UIButton!
     @IBOutlet weak var longBreakAfterBtn: UIButton!
-    @IBOutlet weak var buttonClose: UIButton!
     @IBOutlet weak var buttonStartTask: UIButton!
     
     var selectedButton = UIButton()
@@ -122,7 +121,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     
     @IBAction func startTimerButton(_ sender: Any) {
         
-        dismiss(animated: true)
     }
 }
 

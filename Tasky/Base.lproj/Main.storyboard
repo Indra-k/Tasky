@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -907,11 +907,6 @@
             <point key="canvasLocation" x="3211.594202898551" y="133.92857142857142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bRl-nd-AZN"/>
-        <segue reference="vJW-j5-Khy"/>
-        <segue reference="pBY-XU-8sf"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar Button" width="95" height="95"/>
         <image name="Pause Button" width="95" height="95"/>
@@ -921,4 +916,9 @@
         <image name="insert box" width="398" height="369"/>
         <image name="what is your role?" width="267" height="275"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bRl-nd-AZN"/>
+        <segue reference="LId-Ti-XDs"/>
+        <segue reference="pBY-XU-8sf"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83547D7A24E36C2E00E2B530 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83547D7924E36C2E00E2B530 /* CDManager.swift */; };
+		83547D7D24E3751600E2B530 /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83547D7C24E3751600E2B530 /* CustomTable.swift */; };
+		83547D7F24E3754500E2B530 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83547D7E24E3754500E2B530 /* CustomTableCell.swift */; };
+		83547D8324E38D8B00E2B530 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83547D8224E38D8B00E2B530 /* CloudKit.framework */; };
 		9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676724DB3C67006F837E /* CreateTaskController.swift */; };
 		9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676924DB3CDB006F837E /* StartTaskController.swift */; };
 		9121A41724E05786004555C1 /* PopUpPauseResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121A41624E05786004555C1 /* PopUpPauseResumeViewController.swift */; };
@@ -25,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83547D7924E36C2E00E2B530 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
+		83547D7C24E3751600E2B530 /* CustomTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
+		83547D7E24E3754500E2B530 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		83547D8024E38D8400E2B530 /* Tasky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasky.entitlements; sourceTree = "<group>"; };
+		83547D8224E38D8B00E2B530 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9101676724DB3C67006F837E /* CreateTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskController.swift; sourceTree = "<group>"; };
 		9101676924DB3CDB006F837E /* StartTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTaskController.swift; sourceTree = "<group>"; };
 		9121A41624E05786004555C1 /* PopUpPauseResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPauseResumeViewController.swift; sourceTree = "<group>"; };
@@ -49,17 +58,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83547D8324E38D8B00E2B530 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83547D7B24E374ED00E2B530 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				83547D7C24E3751600E2B530 /* CustomTable.swift */,
+				83547D7E24E3754500E2B530 /* CustomTableCell.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		83547D8124E38D8B00E2B530 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83547D8224E38D8B00E2B530 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A997035E24CFCA8500F3215F = {
 			isa = PBXGroup;
 			children = (
 				A997036924CFCA8500F3215F /* Tasky */,
 				A997036824CFCA8500F3215F /* Products */,
+				83547D8124E38D8B00E2B530 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +102,8 @@
 		A997036924CFCA8500F3215F /* Tasky */ = {
 			isa = PBXGroup;
 			children = (
+				83547D8024E38D8400E2B530 /* Tasky.entitlements */,
+				83547D7B24E374ED00E2B530 /* Table */,
 				A997036A24CFCA8500F3215F /* AppDelegate.swift */,
 				A997036C24CFCA8500F3215F /* SceneDelegate.swift */,
 				A997037024CFCA8500F3215F /* Main.storyboard */,
@@ -90,6 +120,7 @@
 				A997037324CFCA8500F3215F /* Tasky.xcdatamodeld */,
 				91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */,
 				9121A41624E05786004555C1 /* PopUpPauseResumeViewController.swift */,
+				83547D7924E36C2E00E2B530 /* CDManager.swift */,
 			);
 			path = Tasky;
 			sourceTree = "<group>";
@@ -172,11 +203,14 @@
 				9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */,
 				9121A41724E05786004555C1 /* PopUpPauseResumeViewController.swift in Sources */,
 				A997036B24CFCA8500F3215F /* AppDelegate.swift in Sources */,
+				83547D7A24E36C2E00E2B530 /* CDManager.swift in Sources */,
 				A997037524CFCA8500F3215F /* Tasky.xcdatamodeld in Sources */,
 				A997036D24CFCA8500F3215F /* SceneDelegate.swift in Sources */,
 				914FC48924D2444500FA8048 /* TaskController.swift in Sources */,
+				83547D7F24E3754500E2B530 /* CustomTableCell.swift in Sources */,
 				A937B07024D12DD1009BC337 /* StartViewController.swift in Sources */,
 				91F340B024DCF38D00B5F5B6 /* InsertTaskViewController.swift in Sources */,
+				83547D7D24E3751600E2B530 /* CustomTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +354,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tasky/Tasky.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9996YQR23Q;
+				DEVELOPMENT_TEAM = NV5W38AXTN;
 				INFOPLIST_FILE = Tasky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,8 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tasky/Tasky.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9996YQR23Q;
+				DEVELOPMENT_TEAM = NV5W38AXTN;
 				INFOPLIST_FILE = Tasky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

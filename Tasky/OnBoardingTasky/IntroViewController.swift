@@ -44,6 +44,8 @@ class IntroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getstartButton.layer.cornerRadius = 10
+        
         getstartButton.isHidden = true
         
         setupPaperOnboardingView()

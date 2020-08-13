@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5q9-tb-xTp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="6WD-c2-D4F">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingScene" id="5q9-tb-xTp" customClass="IntroViewController" customModule="OnBoarding_Tasky_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wh7-S8-2Re">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0X-oU-R1k">
+                                <rect key="frame" x="45" y="726" width="324" height="36"/>
+                                <color key="backgroundColor" red="0.99651271100000005" green="0.56262010340000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getstartButtonTapped:" destination="5q9-tb-xTp" eventType="touchUpInside" id="tK4-qw-Cai"/>
+                                    <segue destination="kwn-tK-qsf" kind="presentation" id="lM4-c6-qNW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ATu-4l-jng" firstAttribute="bottom" secondItem="Q0X-oU-R1k" secondAttribute="bottom" constant="100" id="Vnn-8D-jd5"/>
+                            <constraint firstItem="Q0X-oU-R1k" firstAttribute="leading" secondItem="ATu-4l-jng" secondAttribute="leading" constant="45" id="eXm-nj-NCh"/>
+                            <constraint firstItem="ATu-4l-jng" firstAttribute="trailing" secondItem="Q0X-oU-R1k" secondAttribute="trailing" constant="45" id="zC7-3b-hfJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ATu-4l-jng"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1IK-ew-Ai0"/>
+                    <connections>
+                        <outlet property="getstartButton" destination="Q0X-oU-R1k" id="3G8-OZ-k05"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq4-ju-Hvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5wC-Kl-pay">
+            <objects>
+                <viewController storyboardIdentifier="viewcontroller" id="kwn-tK-qsf" customClass="ViewController" customModule="OnBoarding_Tasky_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gH-iP-rUM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unb-gu-nN7">
+                                <rect key="frame" x="156" y="438" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BeF-vp-YTw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fk0-9w-sd3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="131"/>
+        </scene>
+    </scenes>
+</document>

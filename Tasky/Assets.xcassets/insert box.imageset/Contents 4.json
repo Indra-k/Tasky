@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Husky.png",
+      "filename" : "insert box.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Husky@2x.png",
+      "filename" : "insert box@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Husky@3x.png",
+      "filename" : "insert box@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

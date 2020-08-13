@@ -284,7 +284,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80472767349999996" green="0.92400985960000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-g7-vIl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Husky" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-g7-vIl">
                                 <rect key="frame" x="136" y="328" width="142" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="BKN-Mh-Tth"/>
@@ -1046,7 +1046,7 @@
                                     <segue destination="F7T-CU-usC" kind="show" id="eHn-n2-AiF"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-oH-HaF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Husky" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-oH-HaF">
                                 <rect key="frame" x="136" y="328" width="142" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142" id="7Zk-mb-tmK"/>
@@ -1112,17 +1112,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v2F-aH-HFO"/>
-        <segue reference="LId-Ti-XDs"/>
-        <segue reference="Y9t-kH-xg0"/>
+        <segue reference="bRl-nd-AZN"/>
+        <segue reference="vJW-j5-Khy"/>
+        <segue reference="pBY-XU-8sf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar Button" width="95" height="95"/>
+        <image name="Husky" width="138" height="236"/>
         <image name="Pause Button" width="95" height="95"/>
         <image name="Reward" width="350" height="82"/>
         <image name="Task Button" width="95" height="95"/>
         <image name="Time Button" width="95" height="95"/>
-        <image name="husky" width="102" height="168"/>
         <image name="insert box" width="398" height="369"/>
         <image name="what is your role?" width="267" height="275"/>
     </resources>

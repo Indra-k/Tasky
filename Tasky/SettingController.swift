@@ -26,6 +26,8 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     let longBreak = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min"]
     let longBreakAfter = ["2 Interval", "3 Interval", "4 Interval", "5 Interval", "6 Interval", "7 Interval", "8 Interval"]
     
+    var settingDefault = "0"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,11 +43,11 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         buttonStartTask.layer.shadowOpacity = 0.3
         buttonStartTask.layer.shadowRadius = 4.0
         
-        workIntervalBtn.titleLabel?.text = workInterval[0]
-        workTimeBtn.titleLabel?.text = workTime[0]
-        shortBreakBtn.titleLabel?.text = shortBreak[0]
-        longBreakBtn.titleLabel?.text = longBreak[0]
-        longBreakAfterBtn.titleLabel?.text = longBreakAfter[0]
+        workIntervalBtn.titleLabel?.text = settingDefault
+        workTimeBtn.titleLabel?.text = settingDefault
+        shortBreakBtn.titleLabel?.text = settingDefault
+        longBreakBtn.titleLabel?.text = settingDefault
+        longBreakAfterBtn.titleLabel?.text = settingDefault
     }
     
     //MARK: - Work Interval

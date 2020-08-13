@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Husky.png",
+      "filename" : "Task Button.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Husky@2x.png",
+      "filename" : "Task Button@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Husky@3x.png",
+      "filename" : "Task Button@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

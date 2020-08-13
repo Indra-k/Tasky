@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Husky.png",
+      "filename" : "Time Button.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Husky@2x.png",
+      "filename" : "Time Button@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Husky@3x.png",
+      "filename" : "Time Button@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

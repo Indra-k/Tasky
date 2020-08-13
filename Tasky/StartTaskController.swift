@@ -11,10 +11,9 @@ import UIKit
 
 class StartTaskController: UIViewController {
     
-    
-    
     var timer = Timer()
     var counter = 0
+    var timerStop = true
     
     @IBOutlet weak var timerText: UILabel!
     @IBOutlet weak var PauseBtn: UIButton!
@@ -39,12 +38,17 @@ class StartTaskController: UIViewController {
     }
     
     @IBAction func pauseButton(_ sender: Any) {
-        timer.invalidate()
-        
-        PauseBtn.setBackgroundImage(UIImage(named: "Time Button"), for: .normal)
+        if timerStop == true {
+            timer.invalidate()
+            PauseBtn.setBackgroundImage(UIImage(named: "Time Button"), for: .normal)
+            timerStop = false
+        } else {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
+            timer.fire()
+            PauseBtn.setBackgroundImage(UIImage(named: "Pause Button"), for: .normal)
+            timerStop = true
+        }
     }
-    
-}
 
     func secondsToMinutesAndSeconds(seconds: Int) -> String {
             let minutes = "\((seconds % 3600) / 60)"
@@ -54,3 +58,8 @@ class StartTaskController: UIViewController {
             
             return "\(minuteStamp) : \(secondStamp)"
         }
+}
+//func restart(_ sender: Any) {
+//    timer.fire()
+//    PauseBtn.setBackgroundImage(UIImage(named: "Pause Button"), for: .normal)
+//}

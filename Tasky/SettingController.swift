@@ -21,7 +21,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     var selectedButton = UIButton()
     var selectedList : [String] = []
     let workInterval = ["1x", "2x", "3x", "4x", "5x", "6x", "7x", "8x", "9x", "10x"]
-    let workTime = ["1 min", "5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min"]
+    let workTime = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min"]
     let shortBreak = ["1 min", "2 min", "3 min", "4 min", "5 min", "6 min", "7 min", "8 min", "9 min", "10 min"]
     let longBreak = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min"]
     let longBreakAfter = ["2 Interval", "3 Interval", "4 Interval", "5 Interval", "6 Interval", "7 Interval", "8 Interval"]
@@ -33,7 +33,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         pickerView.delegate = self
         pickerView.dataSource = self
         
-        
         // corner radius untuk button 'done'
         buttonStartTask.layer.cornerRadius = 10
         // shadow untuk button 'done'
@@ -41,7 +40,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         buttonStartTask.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonStartTask.layer.shadowOpacity = 0.3
         buttonStartTask.layer.shadowRadius = 4.0
-        
         
         workIntervalBtn.titleLabel?.text = workInterval[0]
         workTimeBtn.titleLabel?.text = workTime[0]
@@ -58,7 +56,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         selectedButton = workIntervalBtn
         selectedList = workInterval
         
-        
         pickerView.reloadAllComponents()
     }
     
@@ -69,7 +66,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = workTimeBtn
         selectedList = workTime
-        
         
         pickerView.reloadAllComponents()
     }
@@ -82,7 +78,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         selectedButton = shortBreakBtn
         selectedList = shortBreak
         
-        
         pickerView.reloadAllComponents()
     }
     
@@ -93,7 +88,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = longBreakBtn
         selectedList = longBreak
-        
         
         pickerView.reloadAllComponents()
     }
@@ -126,15 +120,12 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         pickerView.isHidden = true
     }
     
-    
-    
     @IBAction func startTimerButton(_ sender: Any) {
         saveData(btn: workIntervalBtn, title: "WorkInterval")
         saveData(btn: workTimeBtn, title: "WorkTime")
         saveData(btn: shortBreakBtn, title: "ShortBreakNum")
         saveData(btn: longBreakBtn, title: "LongbreakNum")
         saveData(btn: longBreakAfterBtn, title: "LongBreakAfter")
-        
     }
     
     func saveData(btn:UIButton, title : String){
@@ -143,9 +134,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         userdef.set(num, forKey: title)
     }
     
-    
     func getInt(s:String)->Int{
-        
         let stringArray = s.components(separatedBy: CharacterSet.decimalDigits.inverted)
         for item in stringArray {
             if let number = Int(item) {

@@ -20,10 +20,10 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     
     var selectedButton = UIButton()
     var selectedList : [String] = []
-    let workInterval = ["1", "2", "3", "4", "5" ,"6" ,"7" ,"8" ,"9" ,"10" ,"11" ,"12" ,"13" ,"14" ,"15" ,"16"]
-    let workTime = ["5" ,"10" ,"15" ,"20" ,"25" ,"30" ,"35" ,"40" ,"55" ,"60"]
-    let shortBreak = ["1" ,"2" ,"3" ,"4" ,"5" ,"6" ,"7" ,"8" ,"9" ,"10" ,"15" ,"20" ,"25" ,"30"]
-    let longBreak = ["5" ,"10" ,"15" ,"20" ,"25" ,"30" ,"35" ,"40" ,"55" ,"60"]
+    let workInterval = ["1x", "2x", "3x", "4x", "5x", "6x", "7x", "8x", "9x", "10x"]
+    let workTime = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min", "65 min", "70 min", "75 min", "80 min", "85 min", "90 min", "95 min", "100 min"]
+    let shortBreak = ["1 min", "2 min", "3 min", "4 min", "5 min", "6 min", "7 min", "8 min", "9 min", "10 min", "11 min", "12 min", "13 min", "14 min", "15 min", "16 min", "17 min", "18 min", "19 min", "20 min"]
+    let longBreak = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min", "65 min", "70 min", "75 min", "80 min", "85 min", "90 min", "95 min", "100 min"]
     let longBreakAfter = ["2 Interval", "3 Interval", "4 Interval", "5 Interval", "6 Interval", "7 Interval", "8 Interval"]
     
     override func viewDidLoad() {
@@ -118,6 +118,8 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         selectedButton.setTitle(selectedList[row], for: .normal)
         pickerView.isHidden = true
     }
+    
+    
     
     @IBAction func startTimerButton(_ sender: Any) {
         

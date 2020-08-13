@@ -21,9 +21,9 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     var selectedButton = UIButton()
     var selectedList : [String] = []
     let workInterval = ["1x", "2x", "3x", "4x", "5x", "6x", "7x", "8x", "9x", "10x"]
-    let workTime = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min", "65 min", "70 min", "75 min", "80 min", "85 min", "90 min", "95 min", "100 min"]
-    let shortBreak = ["1 min", "2 min", "3 min", "4 min", "5 min", "6 min", "7 min", "8 min", "9 min", "10 min", "11 min", "12 min", "13 min", "14 min", "15 min", "16 min", "17 min", "18 min", "19 min", "20 min"]
-    let longBreak = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min", "65 min", "70 min", "75 min", "80 min", "85 min", "90 min", "95 min", "100 min"]
+    let workTime = ["1 min", "5 min", "10 min", "15 min", "20 min", "25 min", "30 min", "35 min", "40 min", "55 min", "60 min"]
+    let shortBreak = ["1 min", "2 min", "3 min", "4 min", "5 min", "6 min", "7 min", "8 min", "9 min", "10 min"]
+    let longBreak = ["5 min", "10 min", "15 min", "20 min", "25 min", "30 min"]
     let longBreakAfter = ["2 Interval", "3 Interval", "4 Interval", "5 Interval", "6 Interval", "7 Interval", "8 Interval"]
     
     override func viewDidLoad() {
@@ -33,6 +33,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         pickerView.delegate = self
         pickerView.dataSource = self
         
+        
         // corner radius untuk button 'done'
         buttonStartTask.layer.cornerRadius = 10
         // shadow untuk button 'done'
@@ -40,6 +41,13 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         buttonStartTask.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonStartTask.layer.shadowOpacity = 0.3
         buttonStartTask.layer.shadowRadius = 4.0
+        
+        
+        workIntervalBtn.titleLabel?.text = workInterval[0]
+        workTimeBtn.titleLabel?.text = workTime[0]
+        shortBreakBtn.titleLabel?.text = shortBreak[0]
+        longBreakBtn.titleLabel?.text = longBreak[0]
+        longBreakAfterBtn.titleLabel?.text = longBreakAfter[0]
     }
     
     //MARK: - Work Interval
@@ -49,7 +57,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = workIntervalBtn
         selectedList = workInterval
-        print(selectedList[0])
+        
         
         pickerView.reloadAllComponents()
     }
@@ -61,7 +69,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = workTimeBtn
         selectedList = workTime
-        print(selectedList[0])
+        
         
         pickerView.reloadAllComponents()
     }
@@ -73,7 +81,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = shortBreakBtn
         selectedList = shortBreak
-        print(selectedList[0])
+        
         
         pickerView.reloadAllComponents()
     }
@@ -85,7 +93,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = longBreakBtn
         selectedList = longBreak
-        print(selectedList[0])
+        
         
         pickerView.reloadAllComponents()
     }
@@ -97,7 +105,6 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         }
         selectedButton = longBreakAfterBtn
         selectedList = longBreakAfter
-        print(selectedList[0])
         
         pickerView.reloadAllComponents()
     }
@@ -122,7 +129,30 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     
     
     @IBAction func startTimerButton(_ sender: Any) {
+        saveData(btn: workIntervalBtn, title: "WorkInterval")
+        saveData(btn: workTimeBtn, title: "WorkTime")
+        saveData(btn: shortBreakBtn, title: "ShortBreakNum")
+        saveData(btn: longBreakBtn, title: "LongbreakNum")
+        saveData(btn: longBreakAfterBtn, title: "LongBreakAfter")
         
+    }
+    
+    func saveData(btn:UIButton, title : String){
+        let num = getInt(s: btn.titleLabel?.text! ?? "0")
+        let userdef = UserDefaults.standard
+        userdef.set(num, forKey: title)
+    }
+    
+    
+    func getInt(s:String)->Int{
+        
+        let stringArray = s.components(separatedBy: CharacterSet.decimalDigits.inverted)
+        for item in stringArray {
+            if let number = Int(item) {
+                return number
+            }
+        }
+        return 0
     }
 }
 

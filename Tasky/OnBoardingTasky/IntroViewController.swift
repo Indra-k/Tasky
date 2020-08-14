@@ -88,7 +88,7 @@ extension IntroViewController {
         print("button getstart")
         
         //Pergi ke menu utama
-        performSegue(withIdentifier: "viewcontroller", sender: nil)
+        performSegue(withIdentifier: "InsertNameController", sender: nil)
     }
 }
 

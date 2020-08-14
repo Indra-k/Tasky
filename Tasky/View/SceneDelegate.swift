@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         else
         {
-            vc = launchStoryboard.instantiateViewController(identifier: "OnboardingScene")
+            vc = launchStoryboard.instantiateInitialViewController()!
         }
         UserDefaults.standard.set(true, forKey: "hasLaunched")
         self.window?.rootViewController = vc

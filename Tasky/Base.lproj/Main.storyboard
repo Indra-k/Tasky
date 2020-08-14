@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vgK-wU-aUM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,274 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Insert Name Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="InsertNameController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InsertNameController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insert box" translatesAutoresizingMaskIntoConstraints="NO" id="lVb-SM-fmJ">
-                                <rect key="frame" x="40" y="244" width="334" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="vYe-Z4-s59"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDB-1C-tOs">
-                                <rect key="frame" x="80" y="374" width="254" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-O9-cxe">
-                                <rect key="frame" x="140" y="428" width="134" height="30"/>
-                                <color key="backgroundColor" red="0.97647058823529409" green="0.76862745098039209" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Done"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonDone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRK-OW-LzQ"/>
-                                    <segue destination="MIQ-vY-Yzu" kind="show" identifier="usernameSaved" id="zl0-5c-hlk"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-gH-Cqc">
-                                <rect key="frame" x="106" y="320" width="202" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97546917200000005" green="0.77132481340000003" blue="0.60388064379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="lVb-SM-fmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9ac-go-Qkf"/>
-                            <constraint firstItem="UhI-O9-cxe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="J2y-vz-2rX"/>
-                            <constraint firstItem="UhI-O9-cxe" firstAttribute="top" secondItem="iDB-1C-tOs" secondAttribute="bottom" constant="20" id="Vc1-W4-eYQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UhI-O9-cxe" secondAttribute="trailing" constant="140" id="WJe-Kh-i0B"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lVb-SM-fmJ" secondAttribute="trailing" constant="40" id="WS0-7k-MHS"/>
-                            <constraint firstItem="lVb-SM-fmJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="X2D-jR-ABp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iDB-1C-tOs" secondAttribute="trailing" constant="80" id="YpE-b0-HFW"/>
-                            <constraint firstItem="iDB-1C-tOs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="330" id="ddc-sp-Wdp"/>
-                            <constraint firstItem="iDB-1C-tOs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="fbk-Qp-p3S"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="saveNameTouchButton" destination="UhI-O9-cxe" id="bdh-wN-Nho"/>
-                        <outlet property="username" destination="iDB-1C-tOs" id="ral-Ll-o07"/>
-                        <outlet property="usernameLabel" destination="mAg-gH-Cqc" id="o87-0U-h2Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
-        </scene>
-        <!--Select Role Controller-->
-        <scene sceneID="Kuh-3w-9RD">
-            <objects>
-                <viewController storyboardIdentifier="SelectRoleController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MIQ-vY-Yzu" customClass="SelectRoleController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HJz-gG-c4v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNX-yx-M7l">
-                                <rect key="frame" x="40" y="124" width="334" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CeE-38-lA0">
-                                <rect key="frame" x="40" y="492" width="334" height="60"/>
-                                <color key="backgroundColor" red="0.99844032530000004" green="0.43165516850000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="bcE-Lo-EwD"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Product Owner">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="vgK-wU-aUM" kind="show" id="uvK-DK-e1o"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="46j-ya-RKk">
-                                <rect key="frame" x="40" y="572" width="334" height="60"/>
-                                <color key="backgroundColor" red="0.93580859900000002" green="0.46286016699999999" blue="0.1095179096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="YrH-b7-vAf"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Designer">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="vgK-wU-aUM" kind="show" id="nbk-LP-thX"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-DA-2gz">
-                                <rect key="frame" x="40" y="652" width="334" height="60"/>
-                                <color key="backgroundColor" red="0.93580859900000002" green="0.46286016699999999" blue="0.1095179096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Kr3-ra-vQg"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Artist">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="vgK-wU-aUM" kind="show" id="pCH-Ib-qP0"/>
-                                </connections>
-                            </button>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCv-W6-Vzx">
-                                <rect key="frame" x="40" y="726" width="334" height="60"/>
-                                <color key="backgroundColor" red="0.93580859900000002" green="0.46286016699999999" blue="0.1095179096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="KXn-G0-dAd"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Programmer">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="vgK-wU-aUM" kind="show" id="Nyi-GN-rxf"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what is your role?" translatesAutoresizingMaskIntoConstraints="NO" id="4pl-cC-ttw">
-                                <rect key="frame" x="87" y="185" width="240" height="275"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bou-56-cdw">
-                                <rect key="frame" x="102" y="315" width="210" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GgP-hK-pUE">
-                                <rect key="frame" x="40" y="802" width="334" height="60"/>
-                                <color key="backgroundColor" red="0.93580859900000002" green="0.46286016699999999" blue="0.1095179096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="jF5-qE-sGk"/>
-                                    <constraint firstAttribute="width" constant="334" id="niy-5i-cwg"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="sjq-QK-Mg1"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Sound Enginer">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97546917200000005" green="0.77132481340000003" blue="0.60388064379999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="7gD-BN-Sec" firstAttribute="trailing" secondItem="46j-ya-RKk" secondAttribute="trailing" constant="40" id="0hV-g7-nlv"/>
-                            <constraint firstItem="4pl-cC-ttw" firstAttribute="leading" secondItem="7gD-BN-Sec" secondAttribute="leading" constant="87" id="1eF-06-f53"/>
-                            <constraint firstItem="7gD-BN-Sec" firstAttribute="trailing" secondItem="CeE-38-lA0" secondAttribute="trailing" constant="40" id="8jt-0O-9pL"/>
-                            <constraint firstItem="GgP-hK-pUE" firstAttribute="centerX" secondItem="HJz-gG-c4v" secondAttribute="centerX" id="9um-Xp-WMm"/>
-                            <constraint firstItem="46j-ya-RKk" firstAttribute="leading" secondItem="7gD-BN-Sec" secondAttribute="leading" constant="40" id="Bhg-yg-7jC"/>
-                            <constraint firstItem="7gD-BN-Sec" firstAttribute="trailing" secondItem="4pl-cC-ttw" secondAttribute="trailing" constant="87" id="CIL-jc-aOS"/>
-                            <constraint firstItem="7gD-BN-Sec" firstAttribute="trailing" secondItem="tCv-W6-Vzx" secondAttribute="trailing" constant="40" id="G4B-pK-QrW"/>
-                            <constraint firstItem="LLZ-DA-2gz" firstAttribute="leading" secondItem="7gD-BN-Sec" secondAttribute="leading" constant="40" id="Ooy-iG-huu"/>
-                            <constraint firstItem="46j-ya-RKk" firstAttribute="top" secondItem="CeE-38-lA0" secondAttribute="bottom" constant="20" id="PSh-iv-CqK"/>
-                            <constraint firstItem="tCv-W6-Vzx" firstAttribute="leading" secondItem="7gD-BN-Sec" secondAttribute="leading" constant="40" id="Q4i-KF-WIs"/>
-                            <constraint firstItem="GgP-hK-pUE" firstAttribute="centerY" secondItem="HJz-gG-c4v" secondAttribute="centerY" constant="384" id="W7d-1S-hLk"/>
-                            <constraint firstItem="LLZ-DA-2gz" firstAttribute="top" secondItem="46j-ya-RKk" secondAttribute="bottom" constant="20" id="aN3-tb-ced"/>
-                            <constraint firstItem="GgP-hK-pUE" firstAttribute="top" secondItem="tCv-W6-Vzx" secondAttribute="bottom" constant="16" id="br6-TJ-hgM"/>
-                            <constraint firstItem="tCv-W6-Vzx" firstAttribute="top" secondItem="LLZ-DA-2gz" secondAttribute="bottom" constant="14" id="cla-ch-GEt"/>
-                            <constraint firstItem="46j-ya-RKk" firstAttribute="top" secondItem="CeE-38-lA0" secondAttribute="bottom" constant="20" id="fbt-Nw-pLL"/>
-                            <constraint firstItem="4pl-cC-ttw" firstAttribute="top" secondItem="iNX-yx-M7l" secondAttribute="bottom" constant="40" id="gsl-yj-un7"/>
-                            <constraint firstItem="7gD-BN-Sec" firstAttribute="trailing" secondItem="LLZ-DA-2gz" secondAttribute="trailing" constant="40" id="k5p-pL-QIN"/>
-                            <constraint firstItem="7gD-BN-Sec" firstAttribute="trailing" secondItem="iNX-yx-M7l" secondAttribute="trailing" constant="40" id="msx-uL-4TX"/>
-                            <constraint firstItem="iNX-yx-M7l" firstAttribute="leading" secondItem="7gD-BN-Sec" secondAttribute="leading" constant="40" id="onb-oy-8V7"/>
-                            <constraint firstItem="CeE-38-lA0" firstAttribute="leading" secondItem="7gD-BN-Sec" secondAttribute="leading" constant="40" id="uUx-9u-T4x"/>
-                            <constraint firstItem="LLZ-DA-2gz" firstAttribute="top" secondItem="46j-ya-RKk" secondAttribute="bottom" constant="20" id="yjk-dT-guU"/>
-                            <constraint firstItem="iNX-yx-M7l" firstAttribute="top" secondItem="7gD-BN-Sec" secondAttribute="top" constant="80" id="zNs-xT-AoH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="7gD-BN-Sec"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="u1h-lZ-RA3"/>
-                    <connections>
-                        <outlet property="UserName" destination="iNX-yx-M7l" id="a5j-MR-Ug1"/>
-                        <outlet property="artistTouchButton" destination="LLZ-DA-2gz" id="fEN-ud-EXx"/>
-                        <outlet property="designerTouchButton" destination="46j-ya-RKk" id="CeN-SU-KR5"/>
-                        <outlet property="poTouchButton" destination="CeE-38-lA0" id="fkI-bA-D0x"/>
-                        <outlet property="programmerTouchButton" destination="tCv-W6-Vzx" id="Sab-cY-bTx"/>
-                        <outlet property="roleLabel" destination="bou-56-cdw" id="ON3-6f-zvf"/>
-                        <outlet property="soundEngTouchButton" destination="GgP-hK-pUE" id="bxB-Qz-rMX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RjJ-SZ-zq2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="911.59420289855075" y="133.92857142857142"/>
-        </scene>
         <!--Start View Controller-->
         <scene sceneID="SQL-Gd-Zet">
             <objects>
-                <viewController storyboardIdentifier="StartViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vgK-wU-aUM" customClass="StartViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" modalPresentationStyle="fullScreen" id="vgK-wU-aUM" customClass="StartViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EnU-tN-dPh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,7 +99,7 @@
         <!--Task Controller-->
         <scene sceneID="y52-I8-LlF">
             <objects>
-                <viewController storyboardIdentifier="TaskController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F7T-CU-usC" customClass="TaskController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="F7T-CU-usC" customClass="TaskController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yDg-7O-KsD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -420,7 +156,7 @@
         <!--Create Task Controller-->
         <scene sceneID="Ryd-ox-Yc8">
             <objects>
-                <viewController storyboardIdentifier="CreateTaskController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QIJ-RR-cE5" customClass="CreateTaskController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QIJ-RR-cE5" customClass="CreateTaskController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zF2-K5-5SF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -512,7 +248,7 @@
         <!--Insert Task View Controller-->
         <scene sceneID="1z8-ZI-mQm">
             <objects>
-                <viewController storyboardIdentifier="InsertTaskViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n29-Nd-OPd" customClass="InsertTaskViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="n29-Nd-OPd" customClass="InsertTaskViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4N5-KI-1xR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -568,7 +304,7 @@
         <!--Setting Controller-->
         <scene sceneID="CXF-HC-WUH">
             <objects>
-                <viewController storyboardIdentifier="SettingController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QxE-sS-p87" customClass="SettingController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QxE-sS-p87" customClass="SettingController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Du-eM-mqE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -754,7 +490,7 @@
         <!--Pop Up Pause Resume View Controller-->
         <scene sceneID="bKu-yT-CKS">
             <objects>
-                <viewController storyboardIdentifier="PopUpPauseResumeViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NYG-5w-4Hr" customClass="PopUpPauseResumeViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="NYG-5w-4Hr" customClass="PopUpPauseResumeViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rrm-Bi-Gdg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -804,7 +540,7 @@
         <!--Start Task Controller-->
         <scene sceneID="uiV-v3-01E">
             <objects>
-                <viewController storyboardIdentifier="StartTaskController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fBt-Uo-4lr" customClass="StartTaskController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fBt-Uo-4lr" customClass="StartTaskController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LZw-3D-CaJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -909,8 +645,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="bRl-nd-AZN"/>
-        <segue reference="vJW-j5-Khy"/>
-        <segue reference="pCH-Ib-qP0"/>
+        <segue reference="LAj-qP-NVa"/>
+        <segue reference="Y9t-kH-xg0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar Button" width="95" height="95"/>
@@ -919,6 +655,5 @@
         <image name="Task Button" width="95" height="95"/>
         <image name="Time Button" width="95" height="95"/>
         <image name="insert box" width="398" height="369"/>
-        <image name="what is your role?" width="267" height="275"/>
     </resources>
 </document>

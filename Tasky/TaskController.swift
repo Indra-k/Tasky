@@ -47,7 +47,8 @@ class TaskController: UIViewController {
     @IBAction func createTask() {
         let alert = UIAlertController(title: "Type Something", message: "What would you like to save in a note?", preferredStyle: .alert)
         alert.addTextField{(textField) in
-            textField.placeholder = "Type Note here"
+            textField.placeholder = "Task Title"
+            
         }
                
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)

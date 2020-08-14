@@ -128,6 +128,8 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         saveData(btn: shortBreakBtn, title: "ShortBreakNum")
         saveData(btn: longBreakBtn, title: "LongbreakNum")
         saveData(btn: longBreakAfterBtn, title: "LongBreakAfter")
+        
+        performSegue(withIdentifier: "startTask", sender: nil)
     }
     
     func saveData(btn:UIButton, title : String){

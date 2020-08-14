@@ -11,6 +11,21 @@
 		83547D8324E38D8B00E2B530 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83547D8224E38D8B00E2B530 /* CloudKit.framework */; };
 		9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676724DB3C67006F837E /* CreateTaskController.swift */; };
 		9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676924DB3CDB006F837E /* StartTaskController.swift */; };
+		911A32E524E6A2E2007DB7F3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A32E424E6A2E2007DB7F3 /* Onboarding.storyboard */; };
+		911A32FE24E6A2F0007DB7F3 /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32EA24E6A2F0007DB7F3 /* PageContainer.swift */; };
+		911A32FF24E6A2F0007DB7F3 /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32EC24E6A2F0007DB7F3 /* PageViewItem.swift */; };
+		911A330024E6A2F0007DB7F3 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32ED24E6A2F0007DB7F3 /* PageView.swift */; };
+		911A330124E6A2F0007DB7F3 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32EF24E6A2F0007DB7F3 /* OnboardingContentView.swift */; };
+		911A330224E6A2F0007DB7F3 /* OnboardingContentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F124E6A2F0007DB7F3 /* OnboardingContentViewItem.swift */; };
+		911A330324E6A2F0007DB7F3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F224E6A2F0007DB7F3 /* IntroViewController.swift */; };
+		911A330424E6A2F0007DB7F3 /* PaperOnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F324E6A2F0007DB7F3 /* PaperOnboardingDelegate.swift */; };
+		911A330524E6A2F0007DB7F3 /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F424E6A2F0007DB7F3 /* PaperOnboardingDataSource.swift */; };
+		911A330624E6A2F0007DB7F3 /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F524E6A2F0007DB7F3 /* PaperOnboarding.swift */; };
+		911A330724E6A2F0007DB7F3 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F724E6A2F0007DB7F3 /* ConstraintsHelper.swift */; };
+		911A330824E6A2F0007DB7F3 /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32F924E6A2F0007DB7F3 /* FillAnimationView.swift */; };
+		911A330924E6A2F0007DB7F3 /* image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32FA24E6A2F0007DB7F3 /* image.swift */; };
+		911A330A24E6A2F0007DB7F3 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32FC24E6A2F0007DB7F3 /* GestureControl.swift */; };
+		911A330B24E6A2F0007DB7F3 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32FD24E6A2F0007DB7F3 /* Configuring.swift */; };
 		9121A41724E05786004555C1 /* PopUpBreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121A41624E05786004555C1 /* PopUpBreakViewController.swift */; };
 		914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48624D243CD00FA8048 /* SelectRoleController.swift */; };
 		914FC48924D2444500FA8048 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48824D2444500FA8048 /* TaskController.swift */; };
@@ -32,6 +47,21 @@
 		83547D8224E38D8B00E2B530 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9101676724DB3C67006F837E /* CreateTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskController.swift; sourceTree = "<group>"; };
 		9101676924DB3CDB006F837E /* StartTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTaskController.swift; sourceTree = "<group>"; };
+		911A32E424E6A2E2007DB7F3 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		911A32EA24E6A2F0007DB7F3 /* PageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainer.swift; sourceTree = "<group>"; };
+		911A32EC24E6A2F0007DB7F3 /* PageViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewItem.swift; sourceTree = "<group>"; };
+		911A32ED24E6A2F0007DB7F3 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		911A32EF24E6A2F0007DB7F3 /* OnboardingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
+		911A32F124E6A2F0007DB7F3 /* OnboardingContentViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewItem.swift; sourceTree = "<group>"; };
+		911A32F224E6A2F0007DB7F3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		911A32F324E6A2F0007DB7F3 /* PaperOnboardingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboardingDelegate.swift; sourceTree = "<group>"; };
+		911A32F424E6A2F0007DB7F3 /* PaperOnboardingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboardingDataSource.swift; sourceTree = "<group>"; };
+		911A32F524E6A2F0007DB7F3 /* PaperOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboarding.swift; sourceTree = "<group>"; };
+		911A32F724E6A2F0007DB7F3 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+		911A32F924E6A2F0007DB7F3 /* FillAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillAnimationView.swift; sourceTree = "<group>"; };
+		911A32FA24E6A2F0007DB7F3 /* image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
+		911A32FC24E6A2F0007DB7F3 /* GestureControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControl.swift; sourceTree = "<group>"; };
+		911A32FD24E6A2F0007DB7F3 /* Configuring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuring.swift; sourceTree = "<group>"; };
 		9121A41624E05786004555C1 /* PopUpBreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpBreakViewController.swift; sourceTree = "<group>"; };
 		914FC48624D243CD00FA8048 /* SelectRoleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleController.swift; sourceTree = "<group>"; };
 		914FC48824D2444500FA8048 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
@@ -69,6 +99,99 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		911A32E624E6A2F0007DB7F3 /* OnBoardingTasky */ = {
+			isa = PBXGroup;
+			children = (
+				911A32E724E6A2F0007DB7F3 /* Intro */,
+				911A32F224E6A2F0007DB7F3 /* IntroViewController.swift */,
+				911A32F324E6A2F0007DB7F3 /* PaperOnboardingDelegate.swift */,
+				911A32F424E6A2F0007DB7F3 /* PaperOnboardingDataSource.swift */,
+				911A32F524E6A2F0007DB7F3 /* PaperOnboarding.swift */,
+				911A32F624E6A2F0007DB7F3 /* Helpers */,
+			);
+			path = OnBoardingTasky;
+			sourceTree = "<group>";
+		};
+		911A32E724E6A2F0007DB7F3 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				911A32E824E6A2F0007DB7F3 /* PageView */,
+				911A32EE24E6A2F0007DB7F3 /* OnboardingContentView */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		911A32E824E6A2F0007DB7F3 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				911A32E924E6A2F0007DB7F3 /* PageContainerView */,
+				911A32EB24E6A2F0007DB7F3 /* Item */,
+				911A32ED24E6A2F0007DB7F3 /* PageView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		911A32E924E6A2F0007DB7F3 /* PageContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				911A32EA24E6A2F0007DB7F3 /* PageContainer.swift */,
+			);
+			path = PageContainerView;
+			sourceTree = "<group>";
+		};
+		911A32EB24E6A2F0007DB7F3 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				911A32EC24E6A2F0007DB7F3 /* PageViewItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		911A32EE24E6A2F0007DB7F3 /* OnboardingContentView */ = {
+			isa = PBXGroup;
+			children = (
+				911A32EF24E6A2F0007DB7F3 /* OnboardingContentView.swift */,
+				911A32F024E6A2F0007DB7F3 /* Item */,
+			);
+			path = OnboardingContentView;
+			sourceTree = "<group>";
+		};
+		911A32F024E6A2F0007DB7F3 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				911A32F124E6A2F0007DB7F3 /* OnboardingContentViewItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		911A32F624E6A2F0007DB7F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				911A32F724E6A2F0007DB7F3 /* ConstraintsHelper.swift */,
+				911A32F824E6A2F0007DB7F3 /* FillAnimationView */,
+				911A32FA24E6A2F0007DB7F3 /* image.swift */,
+				911A32FB24E6A2F0007DB7F3 /* GestureControl */,
+				911A32FD24E6A2F0007DB7F3 /* Configuring.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		911A32F824E6A2F0007DB7F3 /* FillAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				911A32F924E6A2F0007DB7F3 /* FillAnimationView.swift */,
+			);
+			path = FillAnimationView;
+			sourceTree = "<group>";
+		};
+		911A32FB24E6A2F0007DB7F3 /* GestureControl */ = {
+			isa = PBXGroup;
+			children = (
+				911A32FC24E6A2F0007DB7F3 /* GestureControl.swift */,
+			);
+			path = GestureControl;
+			sourceTree = "<group>";
+		};
 		A997035E24CFCA8500F3215F = {
 			isa = PBXGroup;
 			children = (
@@ -89,10 +212,12 @@
 		A997036924CFCA8500F3215F /* Tasky */ = {
 			isa = PBXGroup;
 			children = (
+				911A32E624E6A2F0007DB7F3 /* OnBoardingTasky */,
 				83547D8024E38D8400E2B530 /* Tasky.entitlements */,
 				A997036A24CFCA8500F3215F /* AppDelegate.swift */,
 				A997036C24CFCA8500F3215F /* SceneDelegate.swift */,
 				A997037024CFCA8500F3215F /* Main.storyboard */,
+				911A32E424E6A2E2007DB7F3 /* Onboarding.storyboard */,
 				914FC48824D2444500FA8048 /* TaskController.swift */,
 				A937B06D24D1237C009BC337 /* SettingController.swift */,
 				914FC48624D243CD00FA8048 /* SelectRoleController.swift */,
@@ -172,6 +297,7 @@
 				A997037A24CFCA8700F3215F /* LaunchScreen.storyboard in Resources */,
 				A997037724CFCA8700F3215F /* Assets.xcassets in Resources */,
 				A997037224CFCA8500F3215F /* Main.storyboard in Resources */,
+				911A32E524E6A2E2007DB7F3 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,19 +308,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911A32FE24E6A2F0007DB7F3 /* PageContainer.swift in Sources */,
+				911A330024E6A2F0007DB7F3 /* PageView.swift in Sources */,
 				A937B06E24D1237C009BC337 /* SettingController.swift in Sources */,
+				911A330B24E6A2F0007DB7F3 /* Configuring.swift in Sources */,
 				9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */,
+				911A330924E6A2F0007DB7F3 /* image.swift in Sources */,
+				911A330824E6A2F0007DB7F3 /* FillAnimationView.swift in Sources */,
 				914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */,
+				911A330A24E6A2F0007DB7F3 /* GestureControl.swift in Sources */,
+				911A32FF24E6A2F0007DB7F3 /* PageViewItem.swift in Sources */,
 				A997036F24CFCA8500F3215F /* InsertNameController.swift in Sources */,
 				9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */,
 				9121A41724E05786004555C1 /* PopUpBreakViewController.swift in Sources */,
 				A997036B24CFCA8500F3215F /* AppDelegate.swift in Sources */,
 				83547D7A24E36C2E00E2B530 /* CDManager.swift in Sources */,
+				911A330524E6A2F0007DB7F3 /* PaperOnboardingDataSource.swift in Sources */,
 				A997037524CFCA8500F3215F /* Tasky.xcdatamodeld in Sources */,
+				911A330624E6A2F0007DB7F3 /* PaperOnboarding.swift in Sources */,
+				911A330124E6A2F0007DB7F3 /* OnboardingContentView.swift in Sources */,
 				A997036D24CFCA8500F3215F /* SceneDelegate.swift in Sources */,
+				911A330424E6A2F0007DB7F3 /* PaperOnboardingDelegate.swift in Sources */,
+				911A330224E6A2F0007DB7F3 /* OnboardingContentViewItem.swift in Sources */,
 				914FC48924D2444500FA8048 /* TaskController.swift in Sources */,
 				A937B07024D12DD1009BC337 /* StartViewController.swift in Sources */,
+				911A330724E6A2F0007DB7F3 /* ConstraintsHelper.swift in Sources */,
 				91F340B024DCF38D00B5F5B6 /* InsertTaskViewController.swift in Sources */,
+				911A330324E6A2F0007DB7F3 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

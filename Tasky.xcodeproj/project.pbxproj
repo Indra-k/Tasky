@@ -195,6 +195,7 @@
 		A997035E24CFCA8500F3215F = {
 			isa = PBXGroup;
 			children = (
+				5077197A24E57B7100251DB2 /* Default-568h@2x.png */,
 				A997036924CFCA8500F3215F /* Tasky */,
 				A997036824CFCA8500F3215F /* Products */,
 				83547D8124E38D8B00E2B530 /* Frameworks */,
@@ -227,6 +228,7 @@
 				9101676924DB3CDB006F837E /* StartTaskController.swift */,
 				A997037624CFCA8700F3215F /* Assets.xcassets */,
 				A997037824CFCA8700F3215F /* LaunchScreen.storyboard */,
+				50107E5824E5883000F30B39 /* Onboarding.storyboard */,
 				A997037B24CFCA8700F3215F /* Info.plist */,
 				A997037324CFCA8500F3215F /* Tasky.xcdatamodeld */,
 				91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */,
@@ -295,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A997037A24CFCA8700F3215F /* LaunchScreen.storyboard in Resources */,
+				50107E5924E5883000F30B39 /* Onboarding.storyboard in Resources */,
 				A997037724CFCA8700F3215F /* Assets.xcassets in Resources */,
 				A997037224CFCA8500F3215F /* Main.storyboard in Resources */,
 				911A32E524E6A2E2007DB7F3 /* Onboarding.storyboard in Resources */,

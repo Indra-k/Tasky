@@ -35,6 +35,9 @@ class StartTaskController: UIViewController {
         counter-=1
         let mtitle = secondsToMinutesAndSeconds(seconds: counter)
         timerText?.text = String(mtitle)
+        if counter == 0 {
+            timer.invalidate()
+        }
     }
     
     @IBAction func pauseButton(_ sender: Any) {

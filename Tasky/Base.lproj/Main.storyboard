@@ -372,9 +372,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0H-pp-Hqe">
                                 <rect key="frame" x="20" y="122" width="374" height="524"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-mF-hWL">
-                                        <rect key="frame" x="152" y="30" width="70" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kco-mF-hWL">
+                                        <rect key="frame" x="127" y="30" width="120" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -389,7 +389,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-VT-tZu" userLabel="2 Stack View">
-                                        <rect key="frame" x="17" y="80" width="234.5" height="205"/>
+                                        <rect key="frame" x="17" y="83.5" width="340" height="205"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-BI-zMj" userLabel="Label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="137.5" height="204"/>
@@ -447,10 +447,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WEs-6L-c8R" userLabel="Button Stack View">
-                                                <rect key="frame" x="204.5" y="0.0" width="30" height="204"/>
+                                                <rect key="frame" x="204.5" y="0.0" width="135.5" height="204"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vW-vk-Sin">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="lSz-DA-9VS"/>
@@ -461,7 +461,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-FN-yKU" userLabel="Work Time Btn">
-                                                        <rect key="frame" x="0.0" y="41" width="30" height="40"/>
+                                                        <rect key="frame" x="0.0" y="41" width="135.5" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="kcJ-HM-uVu"/>
@@ -471,7 +471,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPn-Es-4yZ" userLabel="Short Break Btn">
-                                                        <rect key="frame" x="0.0" y="82" width="30" height="40"/>
+                                                        <rect key="frame" x="0.0" y="82" width="135.5" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="cNf-ze-BVi"/>
@@ -481,7 +481,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdA-qF-51A" userLabel="Long Break Btn">
-                                                        <rect key="frame" x="0.0" y="123" width="30" height="40"/>
+                                                        <rect key="frame" x="0.0" y="123" width="135.5" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Sg8-vL-9Ru"/>
@@ -491,7 +491,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwC-yv-L1I" userLabel="Long Break After Btn">
-                                                        <rect key="frame" x="0.0" y="164" width="30" height="40"/>
+                                                        <rect key="frame" x="0.0" y="164" width="135.5" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="PGg-x1-q2t"/>
@@ -506,26 +506,27 @@
                                         <constraints>
                                             <constraint firstItem="iSM-BI-zMj" firstAttribute="leading" secondItem="gYx-VT-tZu" secondAttribute="leading" id="LXi-aY-GNI"/>
                                             <constraint firstAttribute="height" constant="205" id="N7B-ma-Lk4"/>
+                                            <constraint firstItem="WEs-6L-c8R" firstAttribute="leading" secondItem="iSM-BI-zMj" secondAttribute="trailing" id="TeE-3K-e9s"/>
+                                            <constraint firstAttribute="trailing" secondItem="WEs-6L-c8R" secondAttribute="trailing" id="qGg-tu-sh3"/>
                                         </constraints>
                                     </stackView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fO-kZ-CZZ">
-                                        <rect key="frame" x="30" y="288" width="320" height="216"/>
+                                        <rect key="frame" x="30" y="291.5" width="320" height="216"/>
                                         <color key="backgroundColor" red="0.35209787436548223" green="0.35209787436548223" blue="0.35209787436548223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcq-bY-b2I">
-                                        <rect key="frame" x="142" y="444" width="100" height="30"/>
-                                        <color key="backgroundColor" red="0.98342078919999998" green="0.81418812269999996" blue="0.6666327715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="112" y="434" width="150" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="ubz-Hd-k1I"/>
-                                            <constraint firstAttribute="height" constant="30" id="vr3-a8-Cbs"/>
+                                            <constraint firstAttribute="width" constant="150" id="ubz-Hd-k1I"/>
+                                            <constraint firstAttribute="height" constant="40" id="vr3-a8-Cbs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="startTimerButton:" destination="QxE-sS-p87" eventType="touchUpInside" id="ac1-j4-XKU"/>
-                                            <segue destination="fBt-Uo-4lr" kind="show" id="bRl-nd-AZN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -534,17 +535,18 @@
                                     <constraint firstItem="3fO-kZ-CZZ" firstAttribute="top" secondItem="gYx-VT-tZu" secondAttribute="bottom" constant="3" id="0cO-mR-oW3"/>
                                     <constraint firstAttribute="trailing" secondItem="aqT-bZ-oO6" secondAttribute="trailing" constant="12" id="3e8-NL-RIt"/>
                                     <constraint firstItem="gYx-VT-tZu" firstAttribute="top" secondItem="kco-mF-hWL" secondAttribute="bottom" constant="29.5" id="DSZ-3V-aaI"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYx-VT-tZu" secondAttribute="trailing" constant="17" id="SVC-Vg-yRI"/>
                                     <constraint firstItem="gYx-VT-tZu" firstAttribute="leading" secondItem="j0H-pp-Hqe" secondAttribute="leading" constant="17" id="VC4-eU-NhD"/>
                                     <constraint firstItem="kco-mF-hWL" firstAttribute="top" secondItem="j0H-pp-Hqe" secondAttribute="top" constant="30" id="YEl-dI-EGb"/>
                                     <constraint firstItem="3fO-kZ-CZZ" firstAttribute="leading" secondItem="j0H-pp-Hqe" secondAttribute="leading" constant="30" id="a5m-iL-Rkx"/>
                                     <constraint firstAttribute="bottom" secondItem="Mcq-bY-b2I" secondAttribute="bottom" constant="50" id="duH-DU-xuE"/>
-                                    <constraint firstItem="Mcq-bY-b2I" firstAttribute="leading" secondItem="j0H-pp-Hqe" secondAttribute="leading" constant="142" id="osW-UY-5GQ"/>
                                     <constraint firstItem="aqT-bZ-oO6" firstAttribute="top" secondItem="j0H-pp-Hqe" secondAttribute="top" constant="10" id="wYG-aR-kin"/>
                                     <constraint firstItem="kco-mF-hWL" firstAttribute="centerX" secondItem="j0H-pp-Hqe" secondAttribute="centerX" id="x2N-t9-Pi9"/>
+                                    <constraint firstItem="Mcq-bY-b2I" firstAttribute="centerX" secondItem="j0H-pp-Hqe" secondAttribute="centerX" id="xj7-bl-slA"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -604,6 +606,7 @@
                         <outlet property="shortBreakBtn" destination="nPn-Es-4yZ" id="bEJ-Uj-fkK"/>
                         <outlet property="workIntervalBtn" destination="4vW-vk-Sin" id="flc-a4-fx7"/>
                         <outlet property="workTimeBtn" destination="Hot-FN-yKU" id="wa2-yE-h5z"/>
+                        <segue destination="fBt-Uo-4lr" kind="show" identifier="startTask" id="EQ1-Us-K9m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AnR-60-fL4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -843,7 +846,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bRl-nd-AZN"/>
+        <segue reference="EQ1-Us-K9m"/>
         <segue reference="vJW-j5-Khy"/>
         <segue reference="pBY-XU-8sf"/>
     </inferredMetricsTieBreakers>

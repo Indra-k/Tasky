@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -391,7 +391,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="createTask" destination="F7T-CU-usC" eventType="touchUpInside" id="lnx-7N-huW"/>
+                                    <action selector="createTask" destination="F7T-CU-usC" eventType="touchDown" id="FLo-MD-XIS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqT-d1-feQ">
@@ -405,17 +405,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="getTask:" destination="F7T-CU-usC" eventType="touchUpInside" id="bpZ-IU-wwe"/>
                                     <segue destination="n29-Nd-OPd" kind="presentation" id="k6w-gq-ZOb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUK-8e-CG3">
-                                <rect key="frame" x="186" y="637" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-Ga-Ych">
                                 <rect key="frame" x="20" y="44" width="63" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -431,6 +423,9 @@
                                 <rect key="frame" x="20" y="223" width="374" height="383"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="F7T-CU-usC" id="0sU-3x-8st"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.99889868500000001" green="0.76375335450000004" blue="0.57642257210000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -567,7 +562,7 @@
             <objects>
                 <viewController storyboardIdentifier="InsertTaskViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n29-Nd-OPd" customClass="InsertTaskViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4N5-KI-1xR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="insert box" translatesAutoresizingMaskIntoConstraints="NO" id="D4C-5q-gjd">
@@ -1111,11 +1106,6 @@
             <point key="canvasLocation" x="3211.594202898551" y="133.92857142857142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bRl-nd-AZN"/>
-        <segue reference="eHn-n2-AiF"/>
-        <segue reference="Y9t-kH-xg0"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar Button" width="95" height="95"/>
         <image name="Pause Button" width="95" height="95"/>
@@ -1126,4 +1116,9 @@
         <image name="insert box" width="398" height="369"/>
         <image name="what is your role?" width="267" height="275"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bRl-nd-AZN"/>
+        <segue reference="eHn-n2-AiF"/>
+        <segue reference="Y9t-kH-xg0"/>
+    </inferredMetricsTieBreakers>
 </document>

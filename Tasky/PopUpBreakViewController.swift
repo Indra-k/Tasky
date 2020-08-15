@@ -10,12 +10,34 @@ import UIKit
 
 class PopUpBreakViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var informationLabel: UILabel!
+    @IBOutlet weak var gifHuskyImg: UIImageView!
+    @IBOutlet weak var closeBtn: UIButton!
+    @IBOutlet weak var popUpView: UIView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
+    func shortBreak() {
+        titleLabel.text = ""
+        informationLabel.text = ""
+        gifHuskyImg.loadGif(name: "Husky Lelah")
+    }
+    func longBreak() {
+        titleLabel.text = ""
+        informationLabel.text = ""
+        gifHuskyImg.loadGif(name: "Husky Lelah")
+    }
+    func longBreakAfter() {
+        titleLabel.text = ""
+        informationLabel.text = ""
+        gifHuskyImg.loadGif(name: "Husky Senang After Break")
+    }
 
     @IBAction func closeReward(_ sender: Any) {
         

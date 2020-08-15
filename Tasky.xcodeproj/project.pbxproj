@@ -27,6 +27,12 @@
 		911A330A24E6A2F0007DB7F3 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32FC24E6A2F0007DB7F3 /* GestureControl.swift */; };
 		911A330B24E6A2F0007DB7F3 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A32FD24E6A2F0007DB7F3 /* Configuring.swift */; };
 		9121A41724E05786004555C1 /* PopUpBreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121A41624E05786004555C1 /* PopUpBreakViewController.swift */; };
+		91343E0424E8579000650DBB /* Husky Nunggu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343DFF24E8578F00650DBB /* Husky Nunggu.gif */; };
+		91343E0524E8579000650DBB /* Husky Diam.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0024E8578F00650DBB /* Husky Diam.gif */; };
+		91343E0624E8579000650DBB /* Husky Segar After Break.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0124E8579000650DBB /* Husky Segar After Break.gif */; };
+		91343E0724E8579000650DBB /* Husky Senang Dapat Task.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0224E8579000650DBB /* Husky Senang Dapat Task.gif */; };
+		91343E0824E8579000650DBB /* Husky Lelah.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0324E8579000650DBB /* Husky Lelah.gif */; };
+		91343E0D24E85A8800650DBB /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91343E0C24E85A8800650DBB /* UIImage+Gif.swift */; };
 		914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48624D243CD00FA8048 /* SelectRoleController.swift */; };
 		914FC48924D2444500FA8048 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48824D2444500FA8048 /* TaskController.swift */; };
 		91F340B024DCF38D00B5F5B6 /* InsertTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */; };
@@ -63,6 +69,12 @@
 		911A32FC24E6A2F0007DB7F3 /* GestureControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControl.swift; sourceTree = "<group>"; };
 		911A32FD24E6A2F0007DB7F3 /* Configuring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuring.swift; sourceTree = "<group>"; };
 		9121A41624E05786004555C1 /* PopUpBreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpBreakViewController.swift; sourceTree = "<group>"; };
+		91343DFF24E8578F00650DBB /* Husky Nunggu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Nunggu.gif"; sourceTree = "<group>"; };
+		91343E0024E8578F00650DBB /* Husky Diam.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Diam.gif"; sourceTree = "<group>"; };
+		91343E0124E8579000650DBB /* Husky Segar After Break.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Segar After Break.gif"; sourceTree = "<group>"; };
+		91343E0224E8579000650DBB /* Husky Senang Dapat Task.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Senang Dapat Task.gif"; sourceTree = "<group>"; };
+		91343E0324E8579000650DBB /* Husky Lelah.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Lelah.gif"; sourceTree = "<group>"; };
+		91343E0C24E85A8800650DBB /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "../../../../Downloads/Swift-4-Xcode-9---How-To-Display-GIF-in-UIImage-with-One-Line-Of-Code-in-iOS-Latest-2017-Hindi.-master/UIImage+Gif.swift"; sourceTree = "<group>"; };
 		914FC48624D243CD00FA8048 /* SelectRoleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleController.swift; sourceTree = "<group>"; };
 		914FC48824D2444500FA8048 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTaskViewController.swift; sourceTree = "<group>"; };
@@ -192,10 +204,21 @@
 			path = GestureControl;
 			sourceTree = "<group>";
 		};
+		91343E0924E8579900650DBB /* GIF Source */ = {
+			isa = PBXGroup;
+			children = (
+				91343E0024E8578F00650DBB /* Husky Diam.gif */,
+				91343E0324E8579000650DBB /* Husky Lelah.gif */,
+				91343DFF24E8578F00650DBB /* Husky Nunggu.gif */,
+				91343E0124E8579000650DBB /* Husky Segar After Break.gif */,
+				91343E0224E8579000650DBB /* Husky Senang Dapat Task.gif */,
+			);
+			path = "GIF Source";
+			sourceTree = "<group>";
+		};
 		A997035E24CFCA8500F3215F = {
 			isa = PBXGroup;
 			children = (
-				5077197A24E57B7100251DB2 /* Default-568h@2x.png */,
 				A997036924CFCA8500F3215F /* Tasky */,
 				A997036824CFCA8500F3215F /* Products */,
 				83547D8124E38D8B00E2B530 /* Frameworks */,
@@ -215,6 +238,7 @@
 			children = (
 				911A32E624E6A2F0007DB7F3 /* OnBoardingTasky */,
 				83547D8024E38D8400E2B530 /* Tasky.entitlements */,
+				91343E0C24E85A8800650DBB /* UIImage+Gif.swift */,
 				A997036A24CFCA8500F3215F /* AppDelegate.swift */,
 				A997036C24CFCA8500F3215F /* SceneDelegate.swift */,
 				A997037024CFCA8500F3215F /* Main.storyboard */,
@@ -227,8 +251,8 @@
 				9101676724DB3C67006F837E /* CreateTaskController.swift */,
 				9101676924DB3CDB006F837E /* StartTaskController.swift */,
 				A997037624CFCA8700F3215F /* Assets.xcassets */,
+				91343E0924E8579900650DBB /* GIF Source */,
 				A997037824CFCA8700F3215F /* LaunchScreen.storyboard */,
-				50107E5824E5883000F30B39 /* Onboarding.storyboard */,
 				A997037B24CFCA8700F3215F /* Info.plist */,
 				A997037324CFCA8500F3215F /* Tasky.xcdatamodeld */,
 				91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */,
@@ -296,11 +320,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91343E0824E8579000650DBB /* Husky Lelah.gif in Resources */,
 				A997037A24CFCA8700F3215F /* LaunchScreen.storyboard in Resources */,
-				50107E5924E5883000F30B39 /* Onboarding.storyboard in Resources */,
 				A997037724CFCA8700F3215F /* Assets.xcassets in Resources */,
 				A997037224CFCA8500F3215F /* Main.storyboard in Resources */,
+				91343E0524E8579000650DBB /* Husky Diam.gif in Resources */,
+				91343E0724E8579000650DBB /* Husky Senang Dapat Task.gif in Resources */,
+				91343E0424E8579000650DBB /* Husky Nunggu.gif in Resources */,
 				911A32E524E6A2E2007DB7F3 /* Onboarding.storyboard in Resources */,
+				91343E0624E8579000650DBB /* Husky Segar After Break.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +341,7 @@
 			files = (
 				911A32FE24E6A2F0007DB7F3 /* PageContainer.swift in Sources */,
 				911A330024E6A2F0007DB7F3 /* PageView.swift in Sources */,
+				91343E0D24E85A8800650DBB /* UIImage+Gif.swift in Sources */,
 				A937B06E24D1237C009BC337 /* SettingController.swift in Sources */,
 				911A330B24E6A2F0007DB7F3 /* Configuring.swift in Sources */,
 				9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */,

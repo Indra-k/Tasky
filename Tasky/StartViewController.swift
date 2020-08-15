@@ -11,6 +11,7 @@ import UIKit
 class StartViewController: UIViewController {
     
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var gifHusky: UIImageView!
     
     var usernameLabel = ""
     
@@ -19,6 +20,8 @@ class StartViewController: UIViewController {
         
         // load nama user berdasarkan input name
         self.username?.text = ("Hai \(usernameLabel)")
+        
+        gifHusky.loadGif(name: "Husky Diam")
     }
     
 }

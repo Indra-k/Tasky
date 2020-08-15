@@ -17,6 +17,7 @@ class StartTaskController: UIViewController {
     
     @IBOutlet weak var timerText: UILabel!
     @IBOutlet weak var PauseBtn: UIButton!
+    @IBOutlet weak var gifHusky: UIImageView!
     
     
     override func viewDidLoad() {
@@ -29,6 +30,9 @@ class StartTaskController: UIViewController {
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
         timer.fire()
+        
+        //gif
+        gifHusky.loadGif(name: "Husky Nunggu")
     }
     
     @objc func countDown(){

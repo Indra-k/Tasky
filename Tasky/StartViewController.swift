@@ -18,7 +18,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         
         // load nama user berdasarkan input name
-        self.username?.text = usernameLabel
+        self.username?.text = ("Hai \(usernameLabel)")
     }
     
 }

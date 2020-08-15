@@ -15,14 +15,14 @@ class InsertNameController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var saveNameTouchButton: UIButton!
     
     let titleName = "What is your name?"
-    let defaults = UserDefaults.standard
+//    let defaults = UserDefaults.standard
     var usernameData = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.username.delegate = self
-        usernameSaved()
+//        usernameSaved()
         
         // judul/title Nama user
         usernameLabel?.text = titleName
@@ -46,17 +46,17 @@ class InsertNameController: UIViewController, UITextFieldDelegate {
     }
     
 //---------------for saving username--------------------//
-    func saveUsername() {
-        defaults.set(username.text, forKey: self.usernameData)
-    }
-    func usernameSaved() {
-        let userName = defaults.value(forKey: self.usernameData) as? String ?? ""
-        username.text = userName
-    }
+//    func saveUsername() {
+//        defaults.set(username.text, forKey: self.usernameData)
+//    }
+//    func usernameSaved() {
+//        let userName = defaults.value(forKey: self.usernameData) as? String ?? ""
+//        username.text = userName
+//    }
     @IBAction func buttonDone(_ sender: Any) {
         self.usernameData = username.text!
         performSegue(withIdentifier: "usernameSaved", sender: self)
-        saveUsername()
+//        saveUsername()
     }
     // kirim nama user ke screen select role
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

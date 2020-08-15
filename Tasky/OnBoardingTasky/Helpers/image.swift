@@ -46,10 +46,10 @@ struct ColorAsset {
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 enum Asset {
-    static let illustrate1 = ImageAsset(name: "illustrasi1")
-    static let illustrate2 = ImageAsset(name: "illustrasi2")
-    static let illustrate3 = ImageAsset(name: "illustrasi3")
-    static let illustrate4 = ImageAsset(name: "illustrasi4")
+    static let illustrate1 = ImageAsset(name: "Illustrasi1")
+    static let illustrate2 = ImageAsset(name: "Illustrasi2")
+    static let illustrate3 = ImageAsset(name: "Illustrasi3")
+    static let illustrate4 = ImageAsset(name: "Illustrasi4")
     static let indicator1 = ImageAsset(name: "1")
     static let indicator2 = ImageAsset(name: "2")
     static let indicator3 = ImageAsset(name: "3")

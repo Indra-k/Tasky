@@ -34,7 +34,18 @@ class InsertNameController: UIViewController, UITextFieldDelegate {
         saveNameTouchButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         saveNameTouchButton.layer.shadowOpacity = 0.3
         saveNameTouchButton.layer.shadowRadius = 4.0
+        saveNameTouchButton.backgroundColor = UIColor.orange
+        }
+        
+    @IBAction func buttonTapped(_ sender: Any) {
+        if saveNameTouchButton.backgroundColor == UIColor.orange {
+            saveNameTouchButton.backgroundColor = UIColor.systemPink
+        }
+        else if saveNameTouchButton.backgroundColor == UIColor.systemPink {
+            saveNameTouchButton.backgroundColor = UIColor.orange
+        }
     }
+    
     // for hide keyboard by touch view
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

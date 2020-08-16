@@ -45,12 +45,19 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
         
         getstartButton.layer.cornerRadius = 10
-        
         getstartButton.isHidden = true
-        
+        getstartButton.backgroundColor = UIColor.orange
         setupPaperOnboardingView()
-        
         view.bringSubviewToFront(getstartButton)
+    }
+    
+    @IBAction func buttonTapped(_ sender: Any){
+         if getstartButton.backgroundColor == UIColor.orange {
+                   getstartButton.backgroundColor = UIColor.systemPink
+               }
+               else if getstartButton.backgroundColor == UIColor.systemPink {
+                   getstartButton.backgroundColor = UIColor.orange
+               }
     }
     
     override func didReceiveMemoryWarning() {

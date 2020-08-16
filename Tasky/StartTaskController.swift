@@ -33,6 +33,7 @@ class StartTaskController: UIViewController {
         
         //gif
         gifHusky.loadGif(name: "Husky Nunggu")
+        PauseBtn.backgroundColor = UIColor.orange
     }
     
     @objc func countDown(){
@@ -41,6 +42,15 @@ class StartTaskController: UIViewController {
         timerText?.text = String(mtitle)
         if counter == 0 {
             timer.invalidate()
+        }
+    }
+    
+    @IBAction func buttonTapped(_ sender: Any){
+        if PauseBtn.backgroundColor == UIColor.orange {
+            PauseBtn.backgroundColor = UIColor.systemPink
+        }
+        else if PauseBtn.backgroundColor == UIColor.systemPink {
+            PauseBtn.backgroundColor = UIColor.orange
         }
     }
     

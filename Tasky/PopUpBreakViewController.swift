@@ -20,7 +20,17 @@ class PopUpBreakViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        closeBtn.backgroundColor = UIColor.orange
+        closeBtn.layer.cornerRadius = 10
+    }
+    
+    @IBAction func buttonTapped(_ sender: Any){
+        if closeBtn.backgroundColor == UIColor.orange {
+            closeBtn.backgroundColor = UIColor.systemPink
+        }
+        else if closeBtn.backgroundColor == UIColor.systemPink {
+            closeBtn.backgroundColor = UIColor.orange
+        }
     }
     
     func shortBreak() {

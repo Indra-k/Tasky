@@ -16,10 +16,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ZG-Z4-Y6g">
-                                <rect key="frame" x="3" y="449" width="414" height="447"/>
+                                <rect key="frame" x="0.0" y="449" width="417" height="447"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80472767349999996" green="0.92400985960000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Od7-sX-Tfa">
+                                <rect key="frame" x="0.0" y="444" width="414" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matras" translatesAutoresizingMaskIntoConstraints="NO" id="Wk9-Wp-AnH">
+                                <rect key="frame" x="48" y="471" width="325" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-g7-vIl">
                                 <rect key="frame" x="20" y="256.5" width="374" height="383"/>
                                 <constraints>
@@ -327,6 +336,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTappedCancel:" destination="n29-Nd-OPd" eventType="touchUpInside" id="4hd-E4-Rne"/>
                                     <action selector="cancelButton:" destination="n29-Nd-OPd" eventType="touchUpInside" id="frF-jc-325"/>
                                     <segue destination="F7T-CU-usC" kind="show" id="eIj-fO-Lqv"/>
                                 </connections>
@@ -339,6 +349,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonTappedInsert:" destination="n29-Nd-OPd" eventType="touchUpInside" id="Cli-zJ-Hkf"/>
                                     <action selector="insertIdButton:" destination="n29-Nd-OPd" eventType="touchUpInside" id="WMm-eV-eIW"/>
                                 </connections>
                             </button>
@@ -370,6 +381,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80472767349999996" green="0.92400985960000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lc3-bT-930">
+                                <rect key="frame" x="0.0" y="443" width="414" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0H-pp-Hqe">
                                 <rect key="frame" x="20" y="122" width="374" height="524"/>
                                 <subviews>
@@ -392,7 +408,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-VT-tZu" userLabel="2 Stack View">
                                         <rect key="frame" x="17" y="83.5" width="340" height="205"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-BI-zMj" userLabel="Label Stack View">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-BI-zMj" userLabel="Label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="137.5" height="204"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Work Interval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUh-hl-RDK" userLabel="Work Interval">
@@ -505,9 +521,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="iSM-BI-zMj" firstAttribute="leading" secondItem="gYx-VT-tZu" secondAttribute="leading" id="LXi-aY-GNI"/>
                                             <constraint firstAttribute="height" constant="205" id="N7B-ma-Lk4"/>
-                                            <constraint firstItem="WEs-6L-c8R" firstAttribute="leading" secondItem="iSM-BI-zMj" secondAttribute="trailing" id="TeE-3K-e9s"/>
                                             <constraint firstAttribute="trailing" secondItem="WEs-6L-c8R" secondAttribute="trailing" id="qGg-tu-sh3"/>
                                         </constraints>
                                     </stackView>
@@ -729,6 +743,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="buttonTapped:" destination="NYG-5w-4Hr" eventType="touchUpInside" id="4ra-FG-DmB"/>
                                             <action selector="closeReward:" destination="NYG-5w-4Hr" eventType="touchUpInside" id="ULe-ki-IMX"/>
                                             <segue destination="fBt-Uo-4lr" kind="show" id="v2F-aH-HFO"/>
                                         </connections>
@@ -764,6 +779,22 @@
                                 <rect key="frame" x="0.0" y="449" width="530" height="447"/>
                                 <color key="backgroundColor" red="0.80472767349999996" green="0.92400985960000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yx-xR-7gf">
+                                <rect key="frame" x="0.0" y="443" width="414" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matras" translatesAutoresizingMaskIntoConstraints="NO" id="5ou-jc-j5e">
+                                <rect key="frame" x="45" y="468" width="325" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-oH-HaF">
+                                <rect key="frame" x="20" y="256.5" width="374" height="383"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="1Fk-Sc-MfW"/>
+                                    <constraint firstAttribute="height" constant="383" id="aiZ-rJ-yLU"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xb-XE-0M9">
                                 <rect key="frame" x="167" y="742" width="80" height="80"/>
                                 <constraints>
@@ -773,6 +804,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="Pause Button"/>
                                 <connections>
+                                    <action selector="buttonTapped:" destination="fBt-Uo-4lr" eventType="touchUpInside" id="fBT-Sm-NBs"/>
                                     <action selector="pauseButton:" destination="fBt-Uo-4lr" eventType="touchUpInside" id="3iI-8A-3td"/>
                                 </connections>
                             </button>
@@ -812,13 +844,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="Calendar Button"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="husky" translatesAutoresizingMaskIntoConstraints="NO" id="tl4-oH-HaF">
-                                <rect key="frame" x="20" y="256.5" width="374" height="383"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="1Fk-Sc-MfW"/>
-                                    <constraint firstAttribute="height" constant="383" id="aiZ-rJ-yLU"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -855,8 +880,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v2F-aH-HFO"/>
-        <segue reference="eHn-n2-AiF"/>
+        <segue reference="EQ1-Us-K9m"/>
+        <segue reference="LAj-qP-NVa"/>
         <segue reference="pBY-XU-8sf"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -867,6 +892,7 @@
         <image name="Time Button" width="95" height="95"/>
         <image name="husky" width="138" height="236"/>
         <image name="insert box" width="398" height="369"/>
+        <image name="matras" width="275" height="275"/>
         <image name="what is your role?" width="267" height="275"/>
     </resources>
 </document>

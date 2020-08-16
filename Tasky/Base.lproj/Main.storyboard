@@ -103,7 +103,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="vJC-YE-eDS"/>
                     <connections>
+                        <outlet property="calenderButton" destination="bgD-wf-d9D" id="wXg-dP-T8Z"/>
                         <outlet property="gifHusky" destination="1pc-g7-vIl" id="sDV-0Y-GgS"/>
+                        <outlet property="startButton" destination="Iog-Is-nIC" id="5Af-AI-UDK"/>
+                        <outlet property="taskButton" destination="Mbf-1K-Imc" id="5t1-CG-fml"/>
                         <outlet property="username" destination="qGD-Xf-zsW" id="aHc-hQ-Fk8"/>
                     </connections>
                 </viewController>
@@ -541,6 +544,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="buttonTapped:" destination="QxE-sS-p87" eventType="touchUpInside" id="Yhx-lI-qff"/>
                                             <action selector="startTimerButton:" destination="QxE-sS-p87" eventType="touchUpInside" id="ac1-j4-XKU"/>
                                         </connections>
                                     </button>
@@ -881,8 +885,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="EQ1-Us-K9m"/>
-        <segue reference="LAj-qP-NVa"/>
-        <segue reference="pBY-XU-8sf"/>
+        <segue reference="vJW-j5-Khy"/>
+        <segue reference="MKy-kg-BJU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar Button" width="95" height="95"/>

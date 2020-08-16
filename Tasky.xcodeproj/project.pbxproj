@@ -32,7 +32,6 @@
 		91343E0624E8579000650DBB /* Husky Segar After Break.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0124E8579000650DBB /* Husky Segar After Break.gif */; };
 		91343E0724E8579000650DBB /* Husky Senang Dapat Task.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0224E8579000650DBB /* Husky Senang Dapat Task.gif */; };
 		91343E0824E8579000650DBB /* Husky Lelah.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91343E0324E8579000650DBB /* Husky Lelah.gif */; };
-		91343E0D24E85A8800650DBB /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91343E0C24E85A8800650DBB /* UIImage+Gif.swift */; };
 		914FC48724D243CD00FA8048 /* SelectRoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48624D243CD00FA8048 /* SelectRoleController.swift */; };
 		914FC48924D2444500FA8048 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914FC48824D2444500FA8048 /* TaskController.swift */; };
 		91F340B024DCF38D00B5F5B6 /* InsertTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */; };
@@ -74,7 +73,6 @@
 		91343E0124E8579000650DBB /* Husky Segar After Break.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Segar After Break.gif"; sourceTree = "<group>"; };
 		91343E0224E8579000650DBB /* Husky Senang Dapat Task.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Senang Dapat Task.gif"; sourceTree = "<group>"; };
 		91343E0324E8579000650DBB /* Husky Lelah.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Husky Lelah.gif"; sourceTree = "<group>"; };
-		91343E0C24E85A8800650DBB /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "../../../../Downloads/Swift-4-Xcode-9---How-To-Display-GIF-in-UIImage-with-One-Line-Of-Code-in-iOS-Latest-2017-Hindi.-master/UIImage+Gif.swift"; sourceTree = "<group>"; };
 		914FC48624D243CD00FA8048 /* SelectRoleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleController.swift; sourceTree = "<group>"; };
 		914FC48824D2444500FA8048 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		91F340AF24DCF38D00B5F5B6 /* InsertTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTaskViewController.swift; sourceTree = "<group>"; };
@@ -238,7 +236,6 @@
 			children = (
 				911A32E624E6A2F0007DB7F3 /* OnBoardingTasky */,
 				83547D8024E38D8400E2B530 /* Tasky.entitlements */,
-				91343E0C24E85A8800650DBB /* UIImage+Gif.swift */,
 				A997036A24CFCA8500F3215F /* AppDelegate.swift */,
 				A997036C24CFCA8500F3215F /* SceneDelegate.swift */,
 				A997037024CFCA8500F3215F /* Main.storyboard */,
@@ -341,7 +338,6 @@
 			files = (
 				911A32FE24E6A2F0007DB7F3 /* PageContainer.swift in Sources */,
 				911A330024E6A2F0007DB7F3 /* PageView.swift in Sources */,
-				91343E0D24E85A8800650DBB /* UIImage+Gif.swift in Sources */,
 				A937B06E24D1237C009BC337 /* SettingController.swift in Sources */,
 				911A330B24E6A2F0007DB7F3 /* Configuring.swift in Sources */,
 				9101676A24DB3CDB006F837E /* StartTaskController.swift in Sources */,

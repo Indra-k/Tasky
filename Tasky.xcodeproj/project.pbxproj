@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501101F524EA92D6005FEE6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501101F424EA92D6005FEE6B /* Localizable.strings */; };
+		501101F724EA97EC005FEE6B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501101F624EA97EC005FEE6B /* CalendarViewController.swift */; };
 		83547D7A24E36C2E00E2B530 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83547D7924E36C2E00E2B530 /* CDManager.swift */; };
 		83547D8324E38D8B00E2B530 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83547D8224E38D8B00E2B530 /* CloudKit.framework */; };
 		9101676824DB3C67006F837E /* CreateTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101676724DB3C67006F837E /* CreateTaskController.swift */; };
@@ -48,6 +50,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		501101F024EA9167005FEE6B /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		501101F124EA9167005FEE6B /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		501101F424EA92D6005FEE6B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		501101F624EA97EC005FEE6B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		83547D7924E36C2E00E2B530 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 		83547D8024E38D8400E2B530 /* Tasky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasky.entitlements; sourceTree = "<group>"; };
 		83547D8224E38D8B00E2B530 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -242,8 +248,10 @@
 				A997036A24CFCA8500F3215F /* AppDelegate.swift */,
 				A997036C24CFCA8500F3215F /* SceneDelegate.swift */,
 				A997037024CFCA8500F3215F /* Main.storyboard */,
+				501101F424EA92D6005FEE6B /* Localizable.strings */,
 				911A32E424E6A2E2007DB7F3 /* Onboarding.storyboard */,
 				914FC48824D2444500FA8048 /* TaskController.swift */,
+				501101F624EA97EC005FEE6B /* CalendarViewController.swift */,
 				A937B06D24D1237C009BC337 /* SettingController.swift */,
 				914FC48624D243CD00FA8048 /* SelectRoleController.swift */,
 				A997036E24CFCA8500F3215F /* InsertNameController.swift */,
@@ -304,6 +312,7 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = A997035E24CFCA8500F3215F;
 			productRefGroup = A997036824CFCA8500F3215F /* Products */;
@@ -325,6 +334,7 @@
 				A997037724CFCA8700F3215F /* Assets.xcassets in Resources */,
 				A997037224CFCA8500F3215F /* Main.storyboard in Resources */,
 				91343E0524E8579000650DBB /* Husky Diam.gif in Resources */,
+				501101F524EA92D6005FEE6B /* Localizable.strings in Resources */,
 				91343E0724E8579000650DBB /* Husky Senang Dapat Task.gif in Resources */,
 				91343E0424E8579000650DBB /* Husky Nunggu.gif in Resources */,
 				911A32E524E6A2E2007DB7F3 /* Onboarding.storyboard in Resources */,
@@ -359,6 +369,7 @@
 				A997037524CFCA8500F3215F /* Tasky.xcdatamodeld in Sources */,
 				911A330624E6A2F0007DB7F3 /* PaperOnboarding.swift in Sources */,
 				911A330124E6A2F0007DB7F3 /* OnboardingContentView.swift in Sources */,
+				501101F724EA97EC005FEE6B /* CalendarViewController.swift in Sources */,
 				A997036D24CFCA8500F3215F /* SceneDelegate.swift in Sources */,
 				911A330424E6A2F0007DB7F3 /* PaperOnboardingDelegate.swift in Sources */,
 				911A330224E6A2F0007DB7F3 /* OnboardingContentViewItem.swift in Sources */,
@@ -377,6 +388,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A997037124CFCA8500F3215F /* Base */,
+				501101F024EA9167005FEE6B /* id */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -385,6 +397,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A997037924CFCA8700F3215F /* Base */,
+				501101F124EA9167005FEE6B /* id */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -396,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -456,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

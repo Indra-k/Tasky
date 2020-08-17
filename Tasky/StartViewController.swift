@@ -30,6 +30,8 @@ class StartViewController: UIViewController {
         startButton.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
         calenderButton.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
         
+        username.text = NSLocalizedString("startview_username", comment: "")
+        
         accessibility()
     }
     

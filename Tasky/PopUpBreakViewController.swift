@@ -17,11 +17,14 @@ class PopUpBreakViewController: UIViewController {
     @IBOutlet weak var popUpView: UIView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         closeBtn.backgroundColor = UIColor.orange
         closeBtn.layer.cornerRadius = 10
+        
+        titleLabel.text = NSLocalizedString("popup_title", comment: "")
+        informationLabel.text = NSLocalizedString("popup_information", comment: "")
+        closeBtn.setTitle(NSLocalizedString("popup_closebutton", comment: ""), for: .normal)
         
         accessibility()
     }

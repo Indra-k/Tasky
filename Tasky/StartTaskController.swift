@@ -18,6 +18,7 @@ class StartTaskController: UIViewController {
     @IBOutlet weak var timerText: UILabel!
     @IBOutlet weak var PauseBtn: UIButton!
     @IBOutlet weak var gifHusky: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -33,6 +34,9 @@ class StartTaskController: UIViewController {
         
         //gif
         gifHusky.loadGif(name: "Husky Nunggu")
+        
+        timerText.text = NSLocalizedString("starttask_title", comment: "")
+        nameLabel.text = NSLocalizedString("starttask_name", comment: "")
         
         accessibility()
     }

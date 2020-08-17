@@ -18,6 +18,7 @@ class CreateTaskController: UIViewController {
     @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var stageLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var taskButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,14 @@ class CreateTaskController: UIViewController {
         buttonCreate.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonCreate.layer.shadowOpacity = 0.3
         buttonCreate.layer.shadowRadius = 4.0
+        
+        buttonCreate.setTitle(NSLocalizedString("createtask_buttoncreate", comment: ""), for: .normal)
+        taskButton.setTitle(NSLocalizedString("createtask_taskbackbutton", comment: ""), for: .normal)
+        titleLabel.text = NSLocalizedString("createtask_createtitle", comment: "")
+        taskTitle.text = NSLocalizedString("createtask_tasktitle", comment: "")
+        roleLabel.text = NSLocalizedString("createtask_role", comment: "")
+        stageLabel.text = NSLocalizedString("createtask_stage", comment: "")
+        descriptionLabel.text = NSLocalizedString("createtask_description", comment: "")
         
         accessibility()
     }

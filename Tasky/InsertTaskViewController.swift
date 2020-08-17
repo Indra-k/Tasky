@@ -39,6 +39,10 @@ class InsertTaskViewController: UIViewController {
         buttonCancel.layer.shadowRadius = 4.0
         buttonCancel.backgroundColor = UIColor.orange
         
+        titlePopup.text = NSLocalizedString("inserttask_titlepopup", comment: "")
+        buttonInsert.setTitle(NSLocalizedString("inserttask_buttoninsert", comment: ""), for: .normal)
+        buttonCancel.setTitle(NSLocalizedString("inserttask_buttoncancel", comment: ""), for: .normal)
+        
         accessibility()
     }
     

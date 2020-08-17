@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Tasky
+
+  Created by Pradipta Eva on 17/08/20.
+  Copyright © 2020 Pradipta Eva Trudiyanti. All rights reserved.
+*/
+
+"inserttask_buttoncancel" = "Kembali";
+"calendar_week" = "Minggu 1";
+"calendar_main" = "< Utama";
+//"61r-PP-HSF.placeholder" = "Story or Idea";
+//"6ow-EV-kJ8.normalTitle" = "OK";
+"createtask_createtitle" = "Buat Tugas";
+"calendar_message" = "Maaf, fitur ini akan segera hadir. Terima kasih!";
+"taskcontroller_task" = "TUGAS";
+"createtask_description" = "Deskripsi";
+"setting_workintlabel" = "  Interval Kerja";
+"popup_information" = "informasi";
+"createtask_stage" = "Tahap";
+"createtask_tasktitle" = "Judul Tugas";
+"setting_buttonstarttask" = "Mulai";
+"popup_title" = "judul";
+"starttask_title" = "24:59";
+"setting_longbreakafterlabel" = "  Istirahat Panjang Setelahnya";
+"taskcontroller_createtask" = "Buat Tugas";
+"taskcontroller_gettask" = "Dapatkan Tugas";
+"calendar_month" = "Juli 2020";
+//"aqT-bZ-oO6.normalTitle" = "X";
+"createtask_buttoncreate" = "Buat Tugas";
+//"eZg-lS-wZb.placeholder" = "Creating...";
+"createtask_taskbackbutton" = "< Tugas";
+"popup_closebutton" = "tutup";
+"setting_shortbreaklabel" = "  Istirahat Pendek";
+"setting_timesetting" = "Pengaturan Waktu";
+"calendar_report" = "Laporan Bulanan";
+"startview_username" = "Nama";
+"inserttask_titlepopup" = "Masukkan ID Tugas";
+"taskcontroller_mainbutton" = "< Utama";
+//"pcl-Ri-U1P.placeholder" = "Design";
+"inserttask_buttoninsert" = "Masukkan Tugas";
+"starttask_name" = "Nama";
+"setting_longbreaklabel" = "  Istirahat Panjang";
+"createtask_role" = "Peran";
+"setting_worktimelabel" = "  Waktu Kerja";

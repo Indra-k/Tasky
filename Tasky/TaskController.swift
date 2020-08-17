@@ -19,6 +19,7 @@ class TaskController: UIViewController {
     @IBOutlet weak var buttonCreateTask: UIButton!
     @IBOutlet weak var buttonGetTask: UIButton!
     @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var mainButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,11 @@ class TaskController: UIViewController {
         buttonCreateTask.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonCreateTask.layer.shadowOpacity = 0.3
         buttonCreateTask.layer.shadowRadius = 4.0
+        
+        taskLabel.text = NSLocalizedString("taskcontroller_task", comment: "")
+        buttonCreateTask.setTitle(NSLocalizedString("taskcontroller_createtask", comment: ""), for: .normal)
+        buttonGetTask.setTitle(NSLocalizedString("taskcontroller_gettask", comment: ""), for: .normal)
+        mainButton.setTitle(NSLocalizedString("taskcontroller_mainbutton", comment: ""), for: .normal)
         
         accessibility()
     }

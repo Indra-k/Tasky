@@ -157,8 +157,8 @@
                                     <segue destination="n29-Nd-OPd" kind="presentation" id="k6w-gq-ZOb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-Ga-Ych">
-                                <rect key="frame" x="20" y="44" width="63" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa8-Ga-Ych">
+                                <rect key="frame" x="20" y="44" width="90" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="&lt; Main">
@@ -190,6 +190,7 @@
                     <connections>
                         <outlet property="buttonCreateTask" destination="U5b-vX-IkM" id="nzW-4g-cLB"/>
                         <outlet property="buttonGetTask" destination="VqT-d1-feQ" id="ObB-JV-ADp"/>
+                        <outlet property="mainButton" destination="pa8-Ga-Ych" id="Y4T-xX-mWM"/>
                         <outlet property="tableView" destination="VBe-c3-zNk" id="gbE-cH-YmO"/>
                         <outlet property="taskLabel" destination="C4X-I6-ErS" id="nzU-ri-hPZ"/>
                     </connections>
@@ -206,8 +207,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3B-dI-kOY">
-                                <rect key="frame" x="16" y="42" width="60" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3B-dI-kOY">
+                                <rect key="frame" x="16" y="42" width="92" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="&lt; Task">
@@ -305,6 +306,7 @@
                         <outlet property="role" destination="wLM-Nr-NZU" id="Myd-fX-rgt"/>
                         <outlet property="roleLabel" destination="KOm-3l-36m" id="2RJ-dx-eC1"/>
                         <outlet property="stageLabel" destination="KOm-3l-36m" id="Z1M-5O-WpP"/>
+                        <outlet property="taskButton" destination="h3B-dI-kOY" id="kM2-iZ-63G"/>
                         <outlet property="taskTitle" destination="LnV-75-zsy" id="Acs-jS-wxN"/>
                         <outlet property="titleLabel" destination="9NW-Gf-6aI" id="xrK-kH-PZe"/>
                     </connections>
@@ -647,6 +649,8 @@
                         <outlet property="pickerView" destination="3fO-kZ-CZZ" id="GTE-Fy-8ZA"/>
                         <outlet property="shortBreak" destination="kSK-8k-ioX" id="kiO-wL-5CC"/>
                         <outlet property="shortBreakBtn" destination="nPn-Es-4yZ" id="bEJ-Uj-fkK"/>
+                        <outlet property="startTimerButton" destination="Mcq-bY-b2I" id="aRb-F0-rE0"/>
+                        <outlet property="timeSetting" destination="kco-mF-hWL" id="2WP-ii-Ebz"/>
                         <outlet property="workInterval" destination="JUh-hl-RDK" id="Imc-WR-k3X"/>
                         <outlet property="workIntervalBtn" destination="4vW-vk-Sin" id="flc-a4-fx7"/>
                         <outlet property="workTime" destination="wML-FB-pZI" id="YKa-xU-dBk"/>
@@ -658,10 +662,10 @@
             </objects>
             <point key="canvasLocation" x="2482.608695652174" y="133.92857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="meV-s6-wmX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ycr-c6-s0k" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ycr-c6-s0k" userLabel="Calendar View Controller" customClass="CalendarViewController" customModule="Tasky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHK-pg-TWD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -718,8 +722,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.29675602791878175" green="0.29675602791878175" blue="0.29675602791878175" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juli 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-BD-p3T">
-                                <rect key="frame" x="156" y="77" width="103" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="July 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-BD-p3T">
+                                <rect key="frame" x="153" y="77" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -730,6 +734,13 @@
                         <viewLayoutGuide key="safeArea" id="eXs-9Z-F1g"/>
                     </view>
                     <navigationItem key="navigationItem" id="LOx-hz-NR2"/>
+                    <connections>
+                        <outlet property="mainLabel" destination="Gqy-zH-OSX" id="t3e-MJ-7qP"/>
+                        <outlet property="messageLabel" destination="Blp-yv-aRU" id="Ed1-Kg-xBl"/>
+                        <outlet property="monthLabel" destination="Xye-BD-p3T" id="jzg-7R-uNF"/>
+                        <outlet property="reportButton" destination="m06-ZZ-Fn1" id="K8D-LE-Znx"/>
+                        <outlet property="weekLabel" destination="2XR-Uh-hH3" id="EcQ-Zc-Zvy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jkh-fh-i23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -900,6 +911,7 @@
                     <connections>
                         <outlet property="PauseBtn" destination="3xb-XE-0M9" id="bab-kL-g0x"/>
                         <outlet property="gifHusky" destination="tl4-oH-HaF" id="mBi-eS-uMU"/>
+                        <outlet property="nameLabel" destination="m6g-A7-rUH" id="TbY-uo-z88"/>
                         <outlet property="timerText" destination="OTF-Gm-m7R" id="sur-Ip-2Bg"/>
                     </connections>
                 </viewController>
@@ -909,7 +921,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v2F-aH-HFO"/>
+        <segue reference="EQ1-Us-K9m"/>
         <segue reference="LId-Ti-XDs"/>
         <segue reference="Y9t-kH-xg0"/>
     </inferredMetricsTieBreakers>

@@ -1,0 +1,111 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "08h-ZO-Bgc"; */
+"08h-ZO-Bgc.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Week 1"; ObjectID = "2XR-Uh-hH3"; */
+"2XR-Uh-hH3.text" = "Week 1";
+
+/* Class = "UIButton"; normalTitle = "< Main"; ObjectID = "5ko-ew-Hlr"; */
+"5ko-ew-Hlr.normalTitle" = "< Main";
+
+/* Class = "UITextField"; placeholder = "Story or Idea"; ObjectID = "61r-PP-HSF"; */
+"61r-PP-HSF.placeholder" = "Story or Idea";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "6ow-EV-kJ8"; */
+"6ow-EV-kJ8.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "Create Task"; ObjectID = "9NW-Gf-6aI"; */
+"9NW-Gf-6aI.text" = "Create Task";
+
+/* Class = "UILabel"; text = "Sorry, this feature will coming up soon. thank you!"; ObjectID = "Blp-yv-aRU"; */
+"Blp-yv-aRU.text" = "Sorry, this feature will coming up soon. thank you!";
+
+/* Class = "UILabel"; text = "TASK"; ObjectID = "C4X-I6-ErS"; */
+"C4X-I6-ErS.text" = "TASK";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "GUs-wG-7bA"; */
+"GUs-wG-7bA.text" = "Description";
+
+/* Class = "UILabel"; text = "  Work Interval"; ObjectID = "JUh-hl-RDK"; */
+"JUh-hl-RDK.text" = "  Work Interval";
+
+/* Class = "UILabel"; text = "information"; ObjectID = "K2Y-LQ-Myw"; */
+"K2Y-LQ-Myw.text" = "information";
+
+/* Class = "UILabel"; text = "Stage"; ObjectID = "KOm-3l-36m"; */
+"KOm-3l-36m.text" = "Stage";
+
+/* Class = "UILabel"; text = "Task Title"; ObjectID = "LnV-75-zsy"; */
+"LnV-75-zsy.text" = "Task Title";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "Mcq-bY-b2I"; */
+"Mcq-bY-b2I.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "Nr6-BC-GC1"; */
+"Nr6-BC-GC1.text" = "title";
+
+/* Class = "UILabel"; text = "24:59"; ObjectID = "OTF-Gm-m7R"; */
+"OTF-Gm-m7R.text" = "24:59";
+
+/* Class = "UILabel"; text = "  Long Break After"; ObjectID = "Pec-Dl-EJX"; */
+"Pec-Dl-EJX.text" = "  Long Break After";
+
+/* Class = "UIButton"; normalTitle = "Create Task"; ObjectID = "U5b-vX-IkM"; */
+"U5b-vX-IkM.normalTitle" = "Create Task";
+
+/* Class = "UIButton"; normalTitle = "Get Task"; ObjectID = "VqT-d1-feQ"; */
+"VqT-d1-feQ.normalTitle" = "Get Task";
+
+/* Class = "UILabel"; text = "Juli 2020"; ObjectID = "Xye-BD-p3T"; */
+"Xye-BD-p3T.text" = "Juli 2020";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "aqT-bZ-oO6"; */
+"aqT-bZ-oO6.normalTitle" = "X";
+
+/* Class = "UIButton"; normalTitle = "Create Task"; ObjectID = "eLZ-jl-tZ5"; */
+"eLZ-jl-tZ5.normalTitle" = "Create Task";
+
+/* Class = "UITextField"; placeholder = "Creating..."; ObjectID = "eZg-lS-wZb"; */
+"eZg-lS-wZb.placeholder" = "Creating...";
+
+/* Class = "UIButton"; normalTitle = "< Task"; ObjectID = "h3B-dI-kOY"; */
+"h3B-dI-kOY.normalTitle" = "< Task";
+
+/* Class = "UIButton"; normalTitle = "close"; ObjectID = "kBs-Sl-4uc"; */
+"kBs-Sl-4uc.normalTitle" = "close";
+
+/* Class = "UILabel"; text = "  Short Break"; ObjectID = "kSK-8k-ioX"; */
+"kSK-8k-ioX.text" = "  Short Break";
+
+/* Class = "UILabel"; text = "Time Setting"; ObjectID = "kco-mF-hWL"; */
+"kco-mF-hWL.text" = "Time Setting";
+
+/* Class = "UIButton"; normalTitle = "Get Monthly Report"; ObjectID = "m06-ZZ-Fn1"; */
+"m06-ZZ-Fn1.normalTitle" = "Get Monthly Report";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "m6g-A7-rUH"; */
+"m6g-A7-rUH.text" = "Name";
+
+/* Class = "UILabel"; text = "Insert Task ID"; ObjectID = "maG-DF-cai"; */
+"maG-DF-cai.text" = "Insert Task ID";
+
+/* Class = "UIButton"; normalTitle = "< Main"; ObjectID = "pa8-Ga-Ych"; */
+"pa8-Ga-Ych.normalTitle" = "< Main";
+
+/* Class = "UITextField"; placeholder = "Design"; ObjectID = "pcl-Ri-U1P"; */
+"pcl-Ri-U1P.placeholder" = "Design";
+
+/* Class = "UIButton"; normalTitle = "Insert Task"; ObjectID = "qCS-a2-f5r"; */
+"qCS-a2-f5r.normalTitle" = "Insert Task";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "qGD-Xf-zsW"; */
+"qGD-Xf-zsW.text" = "Name";
+
+/* Class = "UILabel"; text = "  Long Break"; ObjectID = "s3g-aw-qdg"; */
+"s3g-aw-qdg.text" = "  Long Break";
+
+/* Class = "UILabel"; text = "Role"; ObjectID = "wLM-Nr-NZU"; */
+"wLM-Nr-NZU.text" = "Role";
+
+/* Class = "UILabel"; text = "  Work Time"; ObjectID = "wML-FB-pZI"; */
+"wML-FB-pZI.text" = "  Work Time";

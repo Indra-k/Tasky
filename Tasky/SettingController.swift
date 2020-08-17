@@ -51,14 +51,14 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         buttonStartTask.backgroundColor = UIColor.white
     }
     
-    @IBAction func buttonTapped(_ sender: Any) {
-        if buttonStartTask.backgroundColor == UIColor.white {
-            buttonStartTask.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
-        }
-        else if buttonStartTask.backgroundColor == UIColor.white {
-            buttonStartTask.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
-        }
-    }
+//    @IBAction func buttonTapped(_ sender: Any) {
+//        if buttonStartTask.backgroundColor == UIColor.white {
+//            buttonStartTask.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
+//        }
+//        else if buttonStartTask.backgroundColor == UIColor.white {
+//            buttonStartTask.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
+//        }
+//    }
     
     //MARK: - Work Interval
     @IBAction func workIntervalPressed(_ sender: UIButton) {

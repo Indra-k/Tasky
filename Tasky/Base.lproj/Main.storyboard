@@ -559,7 +559,6 @@
                                             <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonTapped:" destination="QxE-sS-p87" eventType="touchUpInside" id="Yhx-lI-qff"/>
                                             <action selector="startTimerButton:" destination="QxE-sS-p87" eventType="touchUpInside" id="ac1-j4-XKU"/>
                                         </connections>
                                     </button>
@@ -823,7 +822,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="Pause Button"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="fBt-Uo-4lr" eventType="touchUpInside" id="fBT-Sm-NBs"/>
                                     <action selector="pauseButton:" destination="fBt-Uo-4lr" eventType="touchUpInside" id="3iI-8A-3td"/>
                                 </connections>
                             </button>
@@ -900,7 +898,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="v2F-aH-HFO"/>
-        <segue reference="eIj-fO-Lqv"/>
+        <segue reference="eHn-n2-AiF"/>
         <segue reference="MKy-kg-BJU"/>
     </inferredMetricsTieBreakers>
     <resources>

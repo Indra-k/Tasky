@@ -28,6 +28,7 @@ class InsertTaskViewController: UIViewController {
         buttonInsert.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonInsert.layer.shadowOpacity = 0.3
         buttonInsert.layer.shadowRadius = 4.0
+        buttonInsert.backgroundColor = UIColor.orange
         
         // corner radius untuk button 'cancel'
         buttonCancel.layer.cornerRadius = 10
@@ -36,8 +37,26 @@ class InsertTaskViewController: UIViewController {
         buttonCancel.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonCancel.layer.shadowOpacity = 0.3
         buttonCancel.layer.shadowRadius = 4.0
+        buttonCancel.backgroundColor = UIColor.orange
     }
     
+    @IBAction func buttonTappedInsert(_ sender: Any){
+        if buttonInsert.backgroundColor == UIColor.orange {
+            buttonInsert.backgroundColor = UIColor.systemPink
+        }
+        else if buttonInsert.backgroundColor == UIColor.systemPink {
+            buttonInsert.backgroundColor = UIColor.orange
+        }
+    }
+    
+    @IBAction func buttonTappedCancel(_ sender: Any){
+        if buttonCancel.backgroundColor == UIColor.orange {
+            buttonCancel.backgroundColor = UIColor.systemPink
+        }
+        else if buttonCancel.backgroundColor == UIColor.systemPink {
+            buttonCancel.backgroundColor = UIColor.orange
+        }
+    }
 
     @IBAction func insertIdButton(_ sender: Any) {
         

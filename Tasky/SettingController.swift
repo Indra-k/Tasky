@@ -16,7 +16,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     @IBOutlet weak var shortBreakBtn: UIButton!
     @IBOutlet weak var longBreakBtn: UIButton!
     @IBOutlet weak var longBreakAfterBtn: UIButton!
-    @IBOutlet weak var buttonStartTask: UIButton!
+    @IBOutlet weak var startTimerButton: UIButton!
     
     @IBOutlet weak var workIntervalLabel: UILabel!
     @IBOutlet weak var workTimeLabel: UILabel!
@@ -44,19 +44,19 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         pickerView.dataSource = self
         
         // corner radius untuk button 'done'
-        buttonStartTask.layer.cornerRadius = 10
+        startTimerButton.layer.cornerRadius = 10
         // shadow untuk button 'done'
-        buttonStartTask.layer.shadowColor = UIColor.black.cgColor
-        buttonStartTask.layer.shadowOffset = CGSize(width: 0, height: 0)
-        buttonStartTask.layer.shadowOpacity = 0.3
-        buttonStartTask.layer.shadowRadius = 4.0
+        startTimerButton.layer.shadowColor = UIColor.black.cgColor
+        startTimerButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        startTimerButton.layer.shadowOpacity = 0.3
+        startTimerButton.layer.shadowRadius = 4.0
         
         workIntervalBtn.titleLabel?.text = settingDefault
         workTimeBtn.titleLabel?.text = settingDefault
         shortBreakBtn.titleLabel?.text = settingDefault
         longBreakBtn.titleLabel?.text = settingDefault
         longBreakAfterBtn.titleLabel?.text = settingDefault
-        buttonStartTask.backgroundColor = UIColor.white
+        startTimerButton.backgroundColor = UIColor.white
         
         workIntervalLabel.text = NSLocalizedString("setting_workintlabel", comment: "")
         workTimeLabel.text = NSLocalizedString("setting_worktimelabel", comment: "")
@@ -69,7 +69,7 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         shortBreakBtn.setTitle(NSLocalizedString("setting_shortbreakbutton", comment: ""), for: .normal)
         longBreakBtn.setTitle(NSLocalizedString("setting_longbreakbutton", comment: ""), for: .normal)
         longBreakAfterBtn.setTitle(NSLocalizedString("setting_longbreakafterbutton", comment: ""), for: .normal)*/
-        buttonStartTask.setTitle(NSLocalizedString("setting_buttonstarttask", comment: ""), for: .normal)
+        startTimerButton.setTitle(NSLocalizedString("setting_buttonstarttask", comment: ""), for: .normal)
         
         accessibility()
     }
@@ -204,8 +204,8 @@ extension SettingController {
         longBreakBtn.titleLabel?.adjustsFontForContentSizeCategory = true
         longBreakAfterBtn.titleLabel?.font = .preferredFont(forTextStyle: .body)
         longBreakAfterBtn.titleLabel?.adjustsFontForContentSizeCategory = true
-        buttonStartTask.titleLabel?.font = .preferredFont(forTextStyle: .body)
-        buttonStartTask.titleLabel?.adjustsFontForContentSizeCategory = true
+        startTimerButton.titleLabel?.font = .preferredFont(forTextStyle: .body)
+        startTimerButton.titleLabel?.adjustsFontForContentSizeCategory = true
 }
 
 }

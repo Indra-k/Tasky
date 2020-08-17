@@ -35,8 +35,8 @@ class StartTaskController: UIViewController {
         //gif
         gifHusky.loadGif(name: "Husky Nunggu")
         
-        timerText.text = NSLocalizedString("starttask_title", comment: "")
-        nameLabel.text = NSLocalizedString("starttask_name", comment: "")
+//        timerText.text = NSLocalizedString("starttask_title", comment: "")
+//        nameLabel.text = NSLocalizedString("starttask_name", comment: "")
         
         accessibility()
     }

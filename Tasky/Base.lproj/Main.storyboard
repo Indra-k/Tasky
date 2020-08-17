@@ -641,20 +641,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="u8g-WG-3lV"/>
                     <connections>
-                        <outlet property="buttonStartTask" destination="Mcq-bY-b2I" id="fIS-fb-L5T"/>
                         <outlet property="longBreakAfterBtn" destination="CwC-yv-L1I" id="44H-0g-TuI"/>
                         <outlet property="longBreakAfterLabel" destination="Pec-Dl-EJX" id="RB3-Pl-Y7G"/>
                         <outlet property="longBreakBtn" destination="FdA-qF-51A" id="u1h-VZ-X2K"/>
                         <outlet property="longBreakLabel" destination="s3g-aw-qdg" id="KmH-kA-8DB"/>
                         <outlet property="pickerView" destination="3fO-kZ-CZZ" id="GTE-Fy-8ZA"/>
-                        <outlet property="shortBreak" destination="kSK-8k-ioX" id="kiO-wL-5CC"/>
                         <outlet property="shortBreakBtn" destination="nPn-Es-4yZ" id="bEJ-Uj-fkK"/>
+                        <outlet property="shortBreakLabel" destination="kSK-8k-ioX" id="x26-Xz-xuW"/>
                         <outlet property="startTimerButton" destination="Mcq-bY-b2I" id="aRb-F0-rE0"/>
                         <outlet property="timeSetting" destination="kco-mF-hWL" id="2WP-ii-Ebz"/>
-                        <outlet property="workInterval" destination="JUh-hl-RDK" id="Imc-WR-k3X"/>
                         <outlet property="workIntervalBtn" destination="4vW-vk-Sin" id="flc-a4-fx7"/>
-                        <outlet property="workTime" destination="wML-FB-pZI" id="YKa-xU-dBk"/>
+                        <outlet property="workIntervalLabel" destination="JUh-hl-RDK" id="Xyy-Fe-g2y"/>
                         <outlet property="workTimeBtn" destination="Hot-FN-yKU" id="wa2-yE-h5z"/>
+                        <outlet property="workTimeLabel" destination="wML-FB-pZI" id="ZY7-Zv-erJ"/>
                         <segue destination="fBt-Uo-4lr" kind="show" identifier="startTask" id="EQ1-Us-K9m"/>
                     </connections>
                 </viewController>
@@ -735,7 +734,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LOx-hz-NR2"/>
                     <connections>
-                        <outlet property="mainLabel" destination="Gqy-zH-OSX" id="t3e-MJ-7qP"/>
+                        <outlet property="mainButton" destination="6ow-EV-kJ8" id="C7J-76-sUH"/>
                         <outlet property="messageLabel" destination="Blp-yv-aRU" id="Ed1-Kg-xBl"/>
                         <outlet property="monthLabel" destination="Xye-BD-p3T" id="jzg-7R-uNF"/>
                         <outlet property="reportButton" destination="m06-ZZ-Fn1" id="K8D-LE-Znx"/>
@@ -922,8 +921,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="EQ1-Us-K9m"/>
-        <segue reference="LId-Ti-XDs"/>
-        <segue reference="Y9t-kH-xg0"/>
+        <segue reference="LAj-qP-NVa"/>
+        <segue reference="pBY-XU-8sf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar Button" width="95" height="95"/>

@@ -18,6 +18,7 @@ class TaskController: UIViewController {
     
     @IBOutlet weak var buttonCreateTask: UIButton!
     @IBOutlet weak var buttonGetTask: UIButton!
+    @IBOutlet weak var taskLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,8 @@ class TaskController: UIViewController {
         buttonCreateTask.layer.shadowOffset = CGSize(width: 0, height: 0)
         buttonCreateTask.layer.shadowOpacity = 0.3
         buttonCreateTask.layer.shadowRadius = 4.0
+        
+        accessibility()
     }
     
     @IBAction func createTask() {
@@ -107,5 +110,16 @@ extension TaskController: UITableViewDataSource {
         let note = notes[indexPath.row].value(forKey: "content") as! String
         cell.textLabel?.text = note
         return cell
+    }
+}
+
+extension TaskController {
+    func accessibility() {
+        taskLabel.font = .preferredFont(forTextStyle: .headline)
+        taskLabel.adjustsFontForContentSizeCategory = true
+        buttonCreateTask.titleLabel?.font = .preferredFont(forTextStyle: .subheadline)
+        buttonCreateTask.titleLabel?.adjustsFontForContentSizeCategory = true
+        buttonGetTask.titleLabel?.font = .preferredFont(forTextStyle: .subheadline)
+        buttonGetTask.titleLabel?.adjustsFontForContentSizeCategory = true
     }
 }

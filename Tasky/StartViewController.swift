@@ -29,6 +29,8 @@ class StartViewController: UIViewController {
         taskButton.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
         startButton.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
         calenderButton.backgroundColor = UIColor.init(red: 205, green: 236, blue: 255, alpha: 0)
+        
+        accessibility()
     }
     
     /*@IBAction func buttonTappedTask(_ sender: Any) {
@@ -60,4 +62,11 @@ class StartViewController: UIViewController {
     
 }*/
 
+}
+
+extension StartViewController {
+    func accessibility() {
+        username.font = .preferredFont(forTextStyle: .title1)
+        username.adjustsFontForContentSizeCategory = true
+    }
 }

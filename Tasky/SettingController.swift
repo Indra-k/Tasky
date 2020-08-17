@@ -18,6 +18,12 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     @IBOutlet weak var longBreakAfterBtn: UIButton!
     @IBOutlet weak var buttonStartTask: UIButton!
     
+    @IBOutlet weak var workIntervalLabel: UILabel!
+    @IBOutlet weak var workTimeLabel: UILabel!
+    @IBOutlet weak var shortBreakLabel: UILabel!
+    @IBOutlet weak var longBreakLabel: UILabel!
+    @IBOutlet weak var longBreakAfterLabel: UILabel!
+    
     var selectedButton = UIButton()
     var selectedList : [String] = []
     let workInterval = ["1x", "2x", "3x", "4x", "5x", "6x", "7x", "8x", "9x", "10x"]
@@ -49,6 +55,8 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
         longBreakBtn.titleLabel?.text = settingDefault
         longBreakAfterBtn.titleLabel?.text = settingDefault
         buttonStartTask.backgroundColor = UIColor.white
+        
+        accessibility()
     }
     
 //    @IBAction func buttonTapped(_ sender: Any) {
@@ -159,4 +167,30 @@ class SettingController: UIViewController,UIPickerViewDataSource, UIPickerViewDe
     }
 }
 
+extension SettingController {
+func accessibility() {
+    workIntervalLabel.font = .preferredFont(forTextStyle: .body)
+    workIntervalLabel.adjustsFontForContentSizeCategory = true
+    workTimeLabel.font = .preferredFont(forTextStyle: .body)
+    workTimeLabel.adjustsFontForContentSizeCategory = true
+    shortBreakLabel.font = .preferredFont(forTextStyle: .body)
+    shortBreakLabel.adjustsFontForContentSizeCategory = true
+    longBreakLabel.font = .preferredFont(forTextStyle: .body)
+    longBreakLabel.adjustsFontForContentSizeCategory = true
+    longBreakAfterLabel.font = .preferredFont(forTextStyle: .body)
+    longBreakAfterLabel.adjustsFontForContentSizeCategory = true
+    workIntervalBtn.titleLabel?.font = .preferredFont(forTextStyle: .body)
+    workIntervalBtn.titleLabel?.adjustsFontForContentSizeCategory = true
+    workTimeBtn.titleLabel?.font = .preferredFont(forTextStyle: .body)
+    workTimeBtn.titleLabel?.adjustsFontForContentSizeCategory = true
+    shortBreakBtn.titleLabel?.font = .preferredFont(forTextStyle: .body)
+    shortBreakBtn.titleLabel?.adjustsFontForContentSizeCategory = true
+    longBreakBtn.titleLabel?.font = .preferredFont(forTextStyle: .body)
+    longBreakBtn.titleLabel?.adjustsFontForContentSizeCategory = true
+    longBreakAfterBtn.titleLabel?.font = .preferredFont(forTextStyle: .body)
+    longBreakAfterBtn.titleLabel?.adjustsFontForContentSizeCategory = true
+    buttonStartTask.titleLabel?.font = .preferredFont(forTextStyle: .body)
+    buttonStartTask.titleLabel?.adjustsFontForContentSizeCategory = true
+}
 
+}

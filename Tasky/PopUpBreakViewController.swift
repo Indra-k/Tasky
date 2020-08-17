@@ -22,6 +22,8 @@ class PopUpBreakViewController: UIViewController {
         super.viewDidLoad()
         closeBtn.backgroundColor = UIColor.orange
         closeBtn.layer.cornerRadius = 10
+        
+        accessibility()
     }
     
     @IBAction func buttonTapped(_ sender: Any){
@@ -53,5 +55,15 @@ class PopUpBreakViewController: UIViewController {
         
         dismiss(animated: true)
     }
-    
+}
+
+extension PopUpBreakViewController {
+func accessibility() {
+    titleLabel.font = .preferredFont(forTextStyle: .headline)
+    titleLabel.adjustsFontForContentSizeCategory = true
+    informationLabel.font = .preferredFont(forTextStyle: .subheadline)
+    informationLabel.adjustsFontForContentSizeCategory = true
+    closeBtn.titleLabel?.font = .preferredFont(forTextStyle: .subheadline)
+    closeBtn.titleLabel?.adjustsFontForContentSizeCategory = true
+}
 }

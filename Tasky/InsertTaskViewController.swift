@@ -38,6 +38,8 @@ class InsertTaskViewController: UIViewController {
         buttonCancel.layer.shadowOpacity = 0.3
         buttonCancel.layer.shadowRadius = 4.0
         buttonCancel.backgroundColor = UIColor.orange
+        
+        accessibility()
     }
     
     @IBAction func buttonTappedInsert(_ sender: Any){
@@ -67,4 +69,16 @@ class InsertTaskViewController: UIViewController {
         
         dismiss(animated: true)
     }
+}
+
+extension InsertTaskViewController {
+    func accessibility() {
+        titlePopup.font = .preferredFont(forTextStyle: .subheadline)
+        titlePopup.adjustsFontForContentSizeCategory = true
+        buttonInsert.titleLabel?.font = .preferredFont(forTextStyle: .subheadline)
+        buttonInsert.titleLabel?.adjustsFontForContentSizeCategory = true
+        buttonCancel.titleLabel?.font = .preferredFont(forTextStyle: .subheadline)
+        buttonCancel.titleLabel?.adjustsFontForContentSizeCategory = true
+    }
+    
 }

@@ -33,6 +33,8 @@ class StartTaskController: UIViewController {
         
         //gif
         gifHusky.loadGif(name: "Husky Nunggu")
+        
+        accessibility()
     }
     
     @objc func countDown(){
@@ -65,6 +67,13 @@ class StartTaskController: UIViewController {
             
             return "\(minuteStamp) : \(secondStamp)"
         }
+}
+
+extension StartTaskController {
+    func accessibility() {
+        timerText.font = .preferredFont(forTextStyle: .headline)
+        timerText.adjustsFontForContentSizeCategory = true
+    }
 }
 //func restart(_ sender: Any) {
 //    timer.fire()
